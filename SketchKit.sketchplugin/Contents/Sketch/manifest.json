@@ -1,0 +1,33 @@
+{
+  "name": "SketchKit",
+  "description" : "Sketch plugin development kit.",
+  "author" : "John Coates",
+  "authorEmail" : "john@johncoates.me",
+  "homepage": "https://github.com/JohnCoates/SketchKit",
+  "version" : "1.0",
+  "identifier" : "com.johncoates.SketchKit",
+  "compatibleVersion": "3.3",
+  "bundleVersion": "1",
+  "commands" : [
+    {
+      "name" : "Load SketchKit",
+      "script" : "src/SketchKit_cached.js",
+      "handler" : "loadSketchKit",
+      "identifier" : "loadSketchKit",
+      "shortcut" : "cmd ctrl 8",
+    },
+    {
+      "name" : "Layout Layers",
+      "script" : "src/CSSketch_cached.js",
+      "handler" : "layoutLayers",
+      "identifier" : "layoutLayers",
+      "shortcut" : "cmd ctrl 0",
+    }
+  ],
+  "menu" : {
+    "items" :[
+      "setPageStylesheet",
+      "layoutLayers"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module SketchKit {
+  umbrella header "SketchKit.h"
+
+  export *
+  module * { export * }
+}

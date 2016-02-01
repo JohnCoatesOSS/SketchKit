@@ -1,0 +1,60 @@
+// Check if we're in Sketch
+if (!NSClassFromString("MSDocument")){
+	// launch Sketch then run this plugin
+	var projectFolder = [[NSFileManager defaultManager] currentDirectoryPath];
+	var scriptPath = [projectFolder stringByAppendingPathComponent:"SketchKit-remote.coscript"];
+	var url = [NSURL fileURLWithPath:scriptPath];
+	var app = [COScript app:"Sketch"];
+	var delegate = [app delegate];
+
+	[delegate runPluginAtURL:url];
+}
+else {
+	if (!NSClassFromString("CSKFileMonitor")) {
+
+		var currentScript = [COScript currentCOScript];
+		var scriptEnvironment = [currentScript env];
+		var scriptURL = scriptEnvironment["scriptURL"];
+		var scriptPath = [scriptURL path];
+		var projectFolder = [scriptPath stringByDeletingLastPathComponent];		
+		var pluginFolder = [projectFolder stringByAppendingPathComponent:@"SketchKit.sketchplugin"];
+		var bundlePath = [pluginFolder stringByAppendingPathComponent:@"SketchKit.framework"];
+		
+		var error = null;
+		if (!loadBundle(bundlePath)) {
+			log("error");
+		}
+	}
+	var testController = SKKTestController.sharedInstance();
+	testController.testWithContext(sketch);
+}
+
+
+function loadBundle(filePath) {
+	var bundleURL = NSURL.fileURLWithPath(filePath);
+	var bundle = [NSBundle bundleWithURL: bundleURL];
+	if (bundle == null) {
+		showNotification("Bundle missing!");
+		error = error;
+		return false;
+	}
+	
+	var loaded = [bundle load];
+	
+	if (!loaded) {
+		showNotification("Couldn't load SketchKit bundle.");
+	}
+	else {
+//		log("loaded bundle!")
+	}
+	return loaded;
+}
+
+function showNotification(message) {
+	var notification =  [[NSUserNotification alloc] init];
+	notification.title = @"SketchKit";
+	notification.informativeText = message;
+	notification.soundName = NSUserNotificationDefaultSoundName;
+	[[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+}
+
