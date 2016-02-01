@@ -1,25 +1,34 @@
 // Check if we're in Sketch
 if (!NSClassFromString("MSDocument")){
-	// launch Sketch then run this plugin
-	var projectFolder = [[NSFileManager defaultManager] currentDirectoryPath];
-	var scriptPath = [projectFolder stringByAppendingPathComponent:"SketchKit-remote.coscript"];
+	// launch Sketch with document then run this plugin
+	var currentScript = [COScript currentCOScript];
+	var scriptEnvironment = [currentScript env];
+	var scriptURL = scriptEnvironment["scriptURL"];
+	var scriptPath = [scriptURL path];
+	
+	var projectFolder = [scriptPath stringByDeletingLastPathComponent];	
+	var sketchDocumentsFolder = [projectFolder stringByAppendingPathComponent:"Sketch Documents"];
+	var shapeTestPath = [sketchDocumentsFolder stringByAppendingPathComponent:"SketchKit Shape Test.sketch"];
+	
+	// Open Sketch document
+    [[NSWorkspace sharedWorkspace] openFile:shapeTestPath];
+	
 	var url = [NSURL fileURLWithPath:scriptPath];
 	var app = [COScript app:"Sketch"];
 	var delegate = [app delegate];
-
+	
 	[delegate runPluginAtURL:url];
 }
 else {
 	if (!NSClassFromString("CSKFileMonitor")) {
-
 		var currentScript = [COScript currentCOScript];
 		var scriptEnvironment = [currentScript env];
 		var scriptURL = scriptEnvironment["scriptURL"];
 		var scriptPath = [scriptURL path];
 		var projectFolder = [scriptPath stringByDeletingLastPathComponent];		
-		var pluginFolder = [projectFolder stringByAppendingPathComponent:@"SketchKit.sketchplugin"];
-		var bundlePath = [pluginFolder stringByAppendingPathComponent:@"SketchKit.framework"];
-		
+		var pluginFolder = [projectFolder stringByAppendingPathComponent:"SketchKit.sketchplugin"];
+		var bundlePath = [pluginFolder stringByAppendingPathComponent:"SketchKit.framework"];
+
 		var error = null;
 		if (!loadBundle(bundlePath)) {
 			log("error");

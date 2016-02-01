@@ -23,19 +23,19 @@ int main(int argc, const char * argv[]) {
         NSString *currentSourcePath = [NSString stringWithFormat:@"%s", __FILE__];
         NSString *launcherFolder =  [currentSourcePath stringByDeletingLastPathComponent];
         NSString *projectFolder = [launcherFolder stringByDeletingLastPathComponent];
-        NSString *sketchDocumentsFolder = [projectFolder stringByAppendingPathComponent:@"Sketch Documents"];
-        NSString *shapeTestPath = [sketchDocumentsFolder stringByAppendingPathComponent:@"SketchKit Shape Test.sketch"];
-                                           
+//        NSString *sketchDocumentsFolder = [projectFolder stringByAppendingPathComponent:@"Sketch Documents"];
+//        NSString *shapeTestPath = [sketchDocumentsFolder stringByAppendingPathComponent:@"SketchKit Shape Test.sketch"];
+        
         // TODO: change to relative path
-        [[NSWorkspace sharedWorkspace] openFile:shapeTestPath];
-        NSLog(@"shape test: %@", shapeTestPath);
+//        [[NSWorkspace sharedWorkspace] openFile:shapeTestPath];
+//        NSLog(@"shape test: %@", shapeTestPath);
         //    [[NSWorkspace sharedWorkspace] openFile:@"/Users/macbook/Dev/Extensions/Sketch/CSSketch/Examples/flexBox.sketch"];
         
         // sleep for a bit while Sketch launches
         sleep(2);
         
         NSString *scriptPath = [projectFolder stringByAppendingPathComponent:@"SketchKit-remote.coscript"];
-
+        NSLog(@"script path: %@", scriptPath);
         NSPipe *pipe = [NSPipe pipe];
         NSFileHandle *file = pipe.fileHandleForReading;
         
@@ -46,6 +46,8 @@ int main(int argc, const char * argv[]) {
         
         [task launch];
         [file closeFile];
+        
+        sleep(4);
     }
     return 0;
 }
