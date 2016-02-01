@@ -63,13 +63,15 @@
 
 #pragma mark - Plugin Entrypoints
 
-- (void)testWithContext:(NSDictionary *)context {
+- (void)testWithContext:(NSDictionary *)sketchContext {
     dispatch_async(dispatch_get_main_queue(), ^{
+        SKKPluginContext *pluginContext = [[SKKPluginContext alloc] initWithSketchContext:sketchContext];
+        
 //        CSK_MSDocument *document = context[@"document"];
 //        CSK_MSPage *page = document.currentPage;
 //        CSK_MSPluginCommand *command = context[@"command"];
         
-        NSLog(@"SKK Context: %@", context);
+        NSLog(@"SKK Context: %@", pluginContext);
     }); // async dispatch
 }
 

@@ -13,6 +13,12 @@
 		FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7411C5FD01D00F746B8 /* SKKTestController.m */; };
 		FADCE74B1C5FE25000F746B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE74A1C5FE25000F746B8 /* main.m */; };
 		FADCE7501C5FEA6300F746B8 /* SketchKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FADCE72B1C5FC8C300F746B8 /* SketchKit.framework */; };
+		FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7581C5FEF2E00F746B8 /* SKKPluginContext.h */; };
+		FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7591C5FEF2E00F746B8 /* SKKPluginContext.m */; };
+		FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE75C1C5FF04100F746B8 /* SKK_MSDocument.h */; };
+		FADCE75F1C5FF04100F746B8 /* SKK_MSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE75D1C5FF04100F746B8 /* SKK_MSDocument.m */; };
+		FADCE7631C5FF09300F746B8 /* STUB_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7611C5FF09300F746B8 /* STUB_MSDocument.h */; };
+		FADCE7641C5FF09300F746B8 /* STUB_MSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7621C5FF09300F746B8 /* STUB_MSDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,14 @@
 		FADCE7481C5FE25000F746B8 /* Test Launcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Test Launcher"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADCE74A1C5FE25000F746B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADCE74F1C5FE34300F746B8 /* SketchKit Shape Test.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SketchKit Shape Test.sketch"; path = "Sketch Documents/SketchKit Shape Test.sketch"; sourceTree = SOURCE_ROOT; };
+		FADCE7581C5FEF2E00F746B8 /* SKKPluginContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKKPluginContext.h; sourceTree = "<group>"; };
+		FADCE7591C5FEF2E00F746B8 /* SKKPluginContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKKPluginContext.m; sourceTree = "<group>"; };
+		FADCE75C1C5FF04100F746B8 /* SKK_MSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSDocument.h; sourceTree = "<group>"; };
+		FADCE75D1C5FF04100F746B8 /* SKK_MSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSDocument.m; sourceTree = "<group>"; };
+		FADCE7611C5FF09300F746B8 /* STUB_MSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSDocument.h; sourceTree = "<group>"; };
+		FADCE7621C5FF09300F746B8 /* STUB_MSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSDocument.m; sourceTree = "<group>"; };
+		FADCE7651C5FF0E000F746B8 /* SketchKitPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SketchKitPrefix.pch; sourceTree = "<group>"; };
+		FADCE7661C5FF29700F746B8 /* SKK_MSDocument-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKK_MSDocument-Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,7 @@
 				FADCE73E1C5FCFC000F746B8 /* Controllers */,
 				FADCE73B1C5FCA6D00F746B8 /* Models */,
 				FADCE72E1C5FC8C300F746B8 /* SketchKit.h */,
+				FADCE7651C5FF0E000F746B8 /* SketchKitPrefix.pch */,
 			);
 			name = Source;
 			path = src;
@@ -109,6 +124,7 @@
 		FADCE73B1C5FCA6D00F746B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FADCE7531C5FEE4400F746B8 /* Stubs */,
 				FADCE73C1C5FCD6900F746B8 /* Object Proxies */,
 			);
 			path = Models;
@@ -117,6 +133,9 @@
 		FADCE73C1C5FCD6900F746B8 /* Object Proxies */ = {
 			isa = PBXGroup;
 			children = (
+				FADCE7561C5FEED100F746B8 /* Layers */,
+				FADCE7551C5FEE7700F746B8 /* Document */,
+				FADCE7541C5FEE6700F746B8 /* Plugin */,
 			);
 			path = "Object Proxies";
 			sourceTree = "<group>";
@@ -147,6 +166,57 @@
 			path = "Test Launcher";
 			sourceTree = "<group>";
 		};
+		FADCE7531C5FEE4400F746B8 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				FADCE7601C5FF04B00F746B8 /* Document */,
+				FADCE7571C5FEEE200F746B8 /* Plugin */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		FADCE7541C5FEE6700F746B8 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				FADCE7581C5FEF2E00F746B8 /* SKKPluginContext.h */,
+				FADCE7591C5FEF2E00F746B8 /* SKKPluginContext.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		FADCE7551C5FEE7700F746B8 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				FADCE75C1C5FF04100F746B8 /* SKK_MSDocument.h */,
+				FADCE75D1C5FF04100F746B8 /* SKK_MSDocument.m */,
+				FADCE7661C5FF29700F746B8 /* SKK_MSDocument-Private.h */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		FADCE7561C5FEED100F746B8 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		FADCE7571C5FEEE200F746B8 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		FADCE7601C5FF04B00F746B8 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				FADCE7611C5FF09300F746B8 /* STUB_MSDocument.h */,
+				FADCE7621C5FF09300F746B8 /* STUB_MSDocument.m */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -155,6 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADCE7421C5FD01D00F746B8 /* SKKTestController.h in Headers */,
+				FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */,
+				FADCE7631C5FF09300F746B8 /* STUB_MSDocument.h in Headers */,
+				FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */,
 				FADCE72F1C5FC8C300F746B8 /* SketchKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADCE7641C5FF09300F746B8 /* STUB_MSDocument.m in Sources */,
+				FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */,
 				FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */,
+				FADCE75F1C5FF04100F746B8 /* SKK_MSDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +442,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = src/SketchKitPrefix.pch;
 				INFOPLIST_FILE = resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -384,6 +461,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = src/SketchKitPrefix.pch;
 				INFOPLIST_FILE = resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
