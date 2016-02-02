@@ -6,10 +6,12 @@
 //  Copyright © 2016 John Coates. All rights reserved.
 //
 
-@interface SKK_MSLayer : NSObject
+@class SKK_MSStyle;
 
+@interface SKK_MSLayer : SKKProxyObject
 
 @property (nonatomic) NSString *name;
+@property (nonatomic, readonly) SKK_MSStyle *style;
 
 @property (nonatomic, readonly) BOOL isPage;
 @property (nonatomic, readonly) BOOL isGroup;

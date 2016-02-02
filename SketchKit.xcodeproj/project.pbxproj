@@ -20,6 +20,43 @@
 		FA4B27311C600D4A00C82A0C /* SKK_MShapeGroup-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B272E1C600D4A00C82A0C /* SKK_MShapeGroup-Private.h */; };
 		FA4B27321C600D4A00C82A0C /* SKK_MShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B272F1C600D4A00C82A0C /* SKK_MShapeGroup.h */; };
 		FA4B27331C600D4A00C82A0C /* SKK_MShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27301C600D4A00C82A0C /* SKK_MShapeGroup.m */; };
+		FA4B273D1C61393400C82A0C /* STUB_MSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B273B1C61393400C82A0C /* STUB_MSStyle.h */; };
+		FA4B273E1C61393400C82A0C /* STUB_MSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B273C1C61393400C82A0C /* STUB_MSStyle.m */; };
+		FA4B27411C61398100C82A0C /* STUB_MSStyleBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B273F1C61398100C82A0C /* STUB_MSStyleBorder.h */; };
+		FA4B27421C61398100C82A0C /* STUB_MSStyleBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27401C61398100C82A0C /* STUB_MSStyleBorder.m */; };
+		FA4B27451C613A7800C82A0C /* STUB_MSStyleFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27431C613A7800C82A0C /* STUB_MSStyleFill.h */; };
+		FA4B27461C613A7800C82A0C /* STUB_MSStyleFill.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27441C613A7800C82A0C /* STUB_MSStyleFill.m */; };
+		FA4B27491C613A8E00C82A0C /* STUB_MSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27471C613A8E00C82A0C /* STUB_MSColor.h */; };
+		FA4B274A1C613A8E00C82A0C /* STUB_MSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27481C613A8E00C82A0C /* STUB_MSColor.m */; };
+		FA4B274E1C613AF900C82A0C /* STUBObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B274C1C613AF900C82A0C /* STUBObject.h */; };
+		FA4B274F1C613AF900C82A0C /* STUBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B274D1C613AF900C82A0C /* STUBObject.m */; };
+		FA4B27541C613B3400C82A0C /* SKKProxyObject-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27511C613B3400C82A0C /* SKKProxyObject-Private.h */; };
+		FA4B27551C613B3400C82A0C /* SKKProxyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27521C613B3400C82A0C /* SKKProxyObject.h */; };
+		FA4B27561C613B3400C82A0C /* SKKProxyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27531C613B3400C82A0C /* SKKProxyObject.m */; };
+		FA4B275B1C613B9E00C82A0C /* SKK_MSStyle-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27581C613B9E00C82A0C /* SKK_MSStyle-Private.h */; };
+		FA4B275C1C613B9E00C82A0C /* SKK_MSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27591C613B9E00C82A0C /* SKK_MSStyle.h */; };
+		FA4B275D1C613B9E00C82A0C /* SKK_MSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B275A1C613B9E00C82A0C /* SKK_MSStyle.m */; };
+		FA4B27601C613F6700C82A0C /* STUB_MSStylePartCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B275E1C613F6700C82A0C /* STUB_MSStylePartCollection.h */; };
+		FA4B27611C613F6700C82A0C /* STUB_MSStylePartCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B275F1C613F6700C82A0C /* STUB_MSStylePartCollection.m */; };
+		FA4B27651C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27621C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h */; };
+		FA4B27661C61416E00C82A0C /* SKK_MSStylePartCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27631C61416E00C82A0C /* SKK_MSStylePartCollection.h */; };
+		FA4B27671C61416E00C82A0C /* SKK_MSStylePartCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27641C61416E00C82A0C /* SKK_MSStylePartCollection.m */; };
+		FA4B276B1C61431100C82A0C /* SKK_MSStyleBorder-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27681C61431100C82A0C /* SKK_MSStyleBorder-Private.h */; };
+		FA4B276C1C61431100C82A0C /* SKK_MSStyleBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27691C61431100C82A0C /* SKK_MSStyleBorder.h */; };
+		FA4B276D1C61431100C82A0C /* SKK_MSStyleBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B276A1C61431100C82A0C /* SKK_MSStyleBorder.m */; };
+		FA4B27701C6144F400C82A0C /* STUB_MSStylePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B276E1C6144F400C82A0C /* STUB_MSStylePart.h */; };
+		FA4B27711C6144F400C82A0C /* STUB_MSStylePart.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B276F1C6144F400C82A0C /* STUB_MSStylePart.m */; };
+		FA4B27751C614A9000C82A0C /* SKK_MSStylePart-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27721C614A9000C82A0C /* SKK_MSStylePart-Private.h */; };
+		FA4B27761C614A9000C82A0C /* SKK_MSStylePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27731C614A9000C82A0C /* SKK_MSStylePart.h */; };
+		FA4B27771C614A9000C82A0C /* SKK_MSStylePart.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27741C614A9000C82A0C /* SKK_MSStylePart.m */; };
+		FA4B277B1C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27781C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h */; };
+		FA4B277C1C615FF100C82A0C /* SKK_MSStyleBasicFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27791C615FF100C82A0C /* SKK_MSStyleBasicFill.h */; };
+		FA4B277D1C615FF100C82A0C /* SKK_MSStyleBasicFill.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B277A1C615FF100C82A0C /* SKK_MSStyleBasicFill.m */; };
+		FA4B27811C61603400C82A0C /* SKK_MSColor-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B277E1C61603400C82A0C /* SKK_MSColor-Private.h */; };
+		FA4B27821C61603400C82A0C /* SKK_MSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B277F1C61603400C82A0C /* SKK_MSColor.h */; };
+		FA4B27831C61603400C82A0C /* SKK_MSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27801C61603400C82A0C /* SKK_MSColor.m */; };
+		FA4B27861C61604C00C82A0C /* STUB_MSStyleBasicFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27841C61604C00C82A0C /* STUB_MSStyleBasicFill.h */; };
+		FA4B27871C61604C00C82A0C /* STUB_MSStyleBasicFill.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27851C61604C00C82A0C /* STUB_MSStyleBasicFill.m */; };
 		FABFF04B1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FABFF0491C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h */; };
 		FABFF04C1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FABFF04A1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m */; };
 		FABFF0501C5FFE4F00CC6112 /* STUB_MSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FABFF04E1C5FFE4F00CC6112 /* STUB_MSPage.h */; };
@@ -74,12 +111,50 @@
 		FA4B272E1C600D4A00C82A0C /* SKK_MShapeGroup-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MShapeGroup-Private.h"; sourceTree = "<group>"; };
 		FA4B272F1C600D4A00C82A0C /* SKK_MShapeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MShapeGroup.h; sourceTree = "<group>"; };
 		FA4B27301C600D4A00C82A0C /* SKK_MShapeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MShapeGroup.m; sourceTree = "<group>"; };
+		FA4B273B1C61393400C82A0C /* STUB_MSStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSStyle.h; sourceTree = "<group>"; };
+		FA4B273C1C61393400C82A0C /* STUB_MSStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSStyle.m; sourceTree = "<group>"; };
+		FA4B273F1C61398100C82A0C /* STUB_MSStyleBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSStyleBorder.h; sourceTree = "<group>"; };
+		FA4B27401C61398100C82A0C /* STUB_MSStyleBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSStyleBorder.m; sourceTree = "<group>"; };
+		FA4B27431C613A7800C82A0C /* STUB_MSStyleFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSStyleFill.h; sourceTree = "<group>"; };
+		FA4B27441C613A7800C82A0C /* STUB_MSStyleFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSStyleFill.m; sourceTree = "<group>"; };
+		FA4B27471C613A8E00C82A0C /* STUB_MSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSColor.h; sourceTree = "<group>"; };
+		FA4B27481C613A8E00C82A0C /* STUB_MSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSColor.m; sourceTree = "<group>"; };
+		FA4B274C1C613AF900C82A0C /* STUBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUBObject.h; sourceTree = "<group>"; };
+		FA4B274D1C613AF900C82A0C /* STUBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUBObject.m; sourceTree = "<group>"; };
+		FA4B27511C613B3400C82A0C /* SKKProxyObject-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKKProxyObject-Private.h"; sourceTree = "<group>"; };
+		FA4B27521C613B3400C82A0C /* SKKProxyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKKProxyObject.h; sourceTree = "<group>"; };
+		FA4B27531C613B3400C82A0C /* SKKProxyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKKProxyObject.m; sourceTree = "<group>"; };
+		FA4B27581C613B9E00C82A0C /* SKK_MSStyle-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSStyle-Private.h"; sourceTree = "<group>"; };
+		FA4B27591C613B9E00C82A0C /* SKK_MSStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSStyle.h; sourceTree = "<group>"; };
+		FA4B275A1C613B9E00C82A0C /* SKK_MSStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSStyle.m; sourceTree = "<group>"; };
+		FA4B275E1C613F6700C82A0C /* STUB_MSStylePartCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSStylePartCollection.h; sourceTree = "<group>"; };
+		FA4B275F1C613F6700C82A0C /* STUB_MSStylePartCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSStylePartCollection.m; sourceTree = "<group>"; };
+		FA4B27621C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSStylePartCollection-Private.h"; sourceTree = "<group>"; };
+		FA4B27631C61416E00C82A0C /* SKK_MSStylePartCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSStylePartCollection.h; sourceTree = "<group>"; };
+		FA4B27641C61416E00C82A0C /* SKK_MSStylePartCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSStylePartCollection.m; sourceTree = "<group>"; };
+		FA4B27681C61431100C82A0C /* SKK_MSStyleBorder-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSStyleBorder-Private.h"; sourceTree = "<group>"; };
+		FA4B27691C61431100C82A0C /* SKK_MSStyleBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSStyleBorder.h; sourceTree = "<group>"; };
+		FA4B276A1C61431100C82A0C /* SKK_MSStyleBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSStyleBorder.m; sourceTree = "<group>"; };
+		FA4B276E1C6144F400C82A0C /* STUB_MSStylePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSStylePart.h; sourceTree = "<group>"; };
+		FA4B276F1C6144F400C82A0C /* STUB_MSStylePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSStylePart.m; sourceTree = "<group>"; };
+		FA4B27721C614A9000C82A0C /* SKK_MSStylePart-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSStylePart-Private.h"; sourceTree = "<group>"; };
+		FA4B27731C614A9000C82A0C /* SKK_MSStylePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSStylePart.h; sourceTree = "<group>"; };
+		FA4B27741C614A9000C82A0C /* SKK_MSStylePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSStylePart.m; sourceTree = "<group>"; };
+		FA4B27781C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSStyleBasicFill-Private.h"; sourceTree = "<group>"; };
+		FA4B27791C615FF100C82A0C /* SKK_MSStyleBasicFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSStyleBasicFill.h; sourceTree = "<group>"; };
+		FA4B277A1C615FF100C82A0C /* SKK_MSStyleBasicFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSStyleBasicFill.m; sourceTree = "<group>"; };
+		FA4B277E1C61603400C82A0C /* SKK_MSColor-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSColor-Private.h"; sourceTree = "<group>"; };
+		FA4B277F1C61603400C82A0C /* SKK_MSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSColor.h; sourceTree = "<group>"; };
+		FA4B27801C61603400C82A0C /* SKK_MSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSColor.m; sourceTree = "<group>"; };
+		FA4B27841C61604C00C82A0C /* STUB_MSStyleBasicFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSStyleBasicFill.h; sourceTree = "<group>"; };
+		FA4B27851C61604C00C82A0C /* STUB_MSStyleBasicFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSStyleBasicFill.m; sourceTree = "<group>"; };
+		FA4B27891C61627000C82A0C /* SKKXMLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKKXMLProtocol.h; sourceTree = "<group>"; };
 		FABFF0491C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSImmutableShapeGroup.h; sourceTree = "<group>"; };
 		FABFF04A1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSImmutableShapeGroup.m; sourceTree = "<group>"; };
 		FABFF04E1C5FFE4F00CC6112 /* STUB_MSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSPage.h; sourceTree = "<group>"; };
 		FABFF04F1C5FFE4F00CC6112 /* STUB_MSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSPage.m; sourceTree = "<group>"; };
 		FADCE72B1C5FC8C300F746B8 /* SketchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SketchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FADCE72E1C5FC8C300F746B8 /* SketchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SketchKit.h; sourceTree = "<group>"; };
+		FADCE72E1C5FC8C300F746B8 /* SketchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SketchKit.h; path = ../SketchKit.h; sourceTree = "<group>"; };
 		FADCE7381C5FCA4500F746B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADCE7401C5FD01D00F746B8 /* SKKTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKKTestController.h; sourceTree = "<group>"; };
 		FADCE7411C5FD01D00F746B8 /* SKKTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKKTestController.m; sourceTree = "<group>"; };
@@ -124,9 +199,84 @@
 			path = Shapes;
 			sourceTree = "<group>";
 		};
+		FA4B27341C6138EB00C82A0C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B273B1C61393400C82A0C /* STUB_MSStyle.h */,
+				FA4B273C1C61393400C82A0C /* STUB_MSStyle.m */,
+				FA4B273F1C61398100C82A0C /* STUB_MSStyleBorder.h */,
+				FA4B27401C61398100C82A0C /* STUB_MSStyleBorder.m */,
+				FA4B27431C613A7800C82A0C /* STUB_MSStyleFill.h */,
+				FA4B27441C613A7800C82A0C /* STUB_MSStyleFill.m */,
+				FA4B27471C613A8E00C82A0C /* STUB_MSColor.h */,
+				FA4B27481C613A8E00C82A0C /* STUB_MSColor.m */,
+				FA4B275E1C613F6700C82A0C /* STUB_MSStylePartCollection.h */,
+				FA4B275F1C613F6700C82A0C /* STUB_MSStylePartCollection.m */,
+				FA4B276E1C6144F400C82A0C /* STUB_MSStylePart.h */,
+				FA4B276F1C6144F400C82A0C /* STUB_MSStylePart.m */,
+				FA4B27841C61604C00C82A0C /* STUB_MSStyleBasicFill.h */,
+				FA4B27851C61604C00C82A0C /* STUB_MSStyleBasicFill.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		FA4B274B1C613ADA00C82A0C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B274C1C613AF900C82A0C /* STUBObject.h */,
+				FA4B274D1C613AF900C82A0C /* STUBObject.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FA4B27501C613B1300C82A0C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B27511C613B3400C82A0C /* SKKProxyObject-Private.h */,
+				FA4B27521C613B3400C82A0C /* SKKProxyObject.h */,
+				FA4B27531C613B3400C82A0C /* SKKProxyObject.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FA4B27571C613B8700C82A0C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B27581C613B9E00C82A0C /* SKK_MSStyle-Private.h */,
+				FA4B27591C613B9E00C82A0C /* SKK_MSStyle.h */,
+				FA4B275A1C613B9E00C82A0C /* SKK_MSStyle.m */,
+				FA4B27621C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h */,
+				FA4B27631C61416E00C82A0C /* SKK_MSStylePartCollection.h */,
+				FA4B27641C61416E00C82A0C /* SKK_MSStylePartCollection.m */,
+				FA4B27681C61431100C82A0C /* SKK_MSStyleBorder-Private.h */,
+				FA4B27691C61431100C82A0C /* SKK_MSStyleBorder.h */,
+				FA4B276A1C61431100C82A0C /* SKK_MSStyleBorder.m */,
+				FA4B27721C614A9000C82A0C /* SKK_MSStylePart-Private.h */,
+				FA4B27731C614A9000C82A0C /* SKK_MSStylePart.h */,
+				FA4B27741C614A9000C82A0C /* SKK_MSStylePart.m */,
+				FA4B27781C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h */,
+				FA4B27791C615FF100C82A0C /* SKK_MSStyleBasicFill.h */,
+				FA4B277A1C615FF100C82A0C /* SKK_MSStyleBasicFill.m */,
+				FA4B277E1C61603400C82A0C /* SKK_MSColor-Private.h */,
+				FA4B277F1C61603400C82A0C /* SKK_MSColor.h */,
+				FA4B27801C61603400C82A0C /* SKK_MSColor.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		FA4B27881C61624F00C82A0C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FADCE72E1C5FC8C300F746B8 /* SketchKit.h */,
+				FA4B27891C61627000C82A0C /* SKKXMLProtocol.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		FABFF0471C5FFC2600CC6112 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B27341C6138EB00C82A0C /* Style */,
 				FABFF0481C5FFC4400CC6112 /* Shapes */,
 				FA4B27251C60062400C82A0C /* STUB_MSLayer.h */,
 				FA4B27261C60062400C82A0C /* STUB_MSLayer.m */,
@@ -186,9 +336,9 @@
 		FADCE7361C5FC9F000F746B8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B27881C61624F00C82A0C /* Headers */,
 				FADCE73E1C5FCFC000F746B8 /* Controllers */,
 				FADCE73B1C5FCA6D00F746B8 /* Models */,
-				FADCE72E1C5FC8C300F746B8 /* SketchKit.h */,
 				FADCE7651C5FF0E000F746B8 /* SketchKitPrefix.pch */,
 			);
 			name = Source;
@@ -216,6 +366,7 @@
 		FADCE73C1C5FCD6900F746B8 /* Object Proxies */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B27501C613B1300C82A0C /* Root */,
 				FADCE7561C5FEED100F746B8 /* Layers */,
 				FADCE7551C5FEE7700F746B8 /* Document */,
 				FADCE7541C5FEE6700F746B8 /* Plugin */,
@@ -252,6 +403,7 @@
 		FADCE7531C5FEE4400F746B8 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B274B1C613ADA00C82A0C /* Root */,
 				FABFF0471C5FFC2600CC6112 /* Layers */,
 				FADCE7601C5FF04B00F746B8 /* Document */,
 				FADCE7571C5FEEE200F746B8 /* Plugin */,
@@ -282,6 +434,7 @@
 		FADCE7561C5FEED100F746B8 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B27571C613B8700C82A0C /* Style */,
 				FA4B272D1C600D2500C82A0C /* Shapes */,
 				FA4B271F1C6005AE00C82A0C /* SKK_MSLayer-Private.h */,
 				FA4B27201C6005AE00C82A0C /* SKK_MSLayer.h */,
@@ -315,20 +468,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADCE7421C5FD01D00F746B8 /* SKKTestController.h in Headers */,
+				FA4B27451C613A7800C82A0C /* STUB_MSStyleFill.h in Headers */,
 				FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */,
+				FA4B274E1C613AF900C82A0C /* STUBObject.h in Headers */,
+				FA4B27751C614A9000C82A0C /* SKK_MSStylePart-Private.h in Headers */,
+				FA4B276B1C61431100C82A0C /* SKK_MSStyleBorder-Private.h in Headers */,
+				FA4B27661C61416E00C82A0C /* SKK_MSStylePartCollection.h in Headers */,
+				FA4B275C1C613B9E00C82A0C /* SKK_MSStyle.h in Headers */,
+				FA4B27411C61398100C82A0C /* STUB_MSStyleBorder.h in Headers */,
+				FA4B273D1C61393400C82A0C /* STUB_MSStyle.h in Headers */,
+				FA4B27821C61603400C82A0C /* SKK_MSColor.h in Headers */,
+				FA4B277C1C615FF100C82A0C /* SKK_MSStyleBasicFill.h in Headers */,
 				FA4B27311C600D4A00C82A0C /* SKK_MShapeGroup-Private.h in Headers */,
 				FA4B27231C6005AE00C82A0C /* SKK_MSLayer.h in Headers */,
 				FA4B27221C6005AE00C82A0C /* SKK_MSLayer-Private.h in Headers */,
 				FADCE7631C5FF09300F746B8 /* STUB_MSDocument.h in Headers */,
+				FA4B27651C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h in Headers */,
+				FA4B276C1C61431100C82A0C /* SKK_MSStyleBorder.h in Headers */,
+				FA4B277B1C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h in Headers */,
 				FABFF04B1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h in Headers */,
+				FA4B27601C613F6700C82A0C /* STUB_MSStylePartCollection.h in Headers */,
 				FA4B27271C60062400C82A0C /* STUB_MSLayer.h in Headers */,
 				FA4B27321C600D4A00C82A0C /* SKK_MShapeGroup.h in Headers */,
+				FA4B27701C6144F400C82A0C /* STUB_MSStylePart.h in Headers */,
 				FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */,
 				FADCE72F1C5FC8C300F746B8 /* SketchKit.h in Headers */,
+				FA4B27761C614A9000C82A0C /* SKK_MSStylePart.h in Headers */,
 				FABFF0501C5FFE4F00CC6112 /* STUB_MSPage.h in Headers */,
 				FA4B271C1C60036200C82A0C /* SKK_MSPage.h in Headers */,
 				FA4B271B1C60036200C82A0C /* SKK_MSPage-Private.h in Headers */,
+				FA4B275B1C613B9E00C82A0C /* SKK_MSStyle-Private.h in Headers */,
+				FA4B27541C613B3400C82A0C /* SKKProxyObject-Private.h in Headers */,
+				FA4B27861C61604C00C82A0C /* STUB_MSStyleBasicFill.h in Headers */,
 				FA4B272B1C600C6600C82A0C /* STUB_MSShapeGroup.h in Headers */,
+				FA4B27811C61603400C82A0C /* SKK_MSColor-Private.h in Headers */,
+				FA4B27551C613B3400C82A0C /* SKKProxyObject.h in Headers */,
+				FA4B27491C613A8E00C82A0C /* STUB_MSColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,16 +596,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4B27421C61398100C82A0C /* STUB_MSStyleBorder.m in Sources */,
 				FADCE7641C5FF09300F746B8 /* STUB_MSDocument.m in Sources */,
+				FA4B27461C613A7800C82A0C /* STUB_MSStyleFill.m in Sources */,
+				FA4B27831C61603400C82A0C /* SKK_MSColor.m in Sources */,
 				FA4B27331C600D4A00C82A0C /* SKK_MShapeGroup.m in Sources */,
+				FA4B27871C61604C00C82A0C /* STUB_MSStyleBasicFill.m in Sources */,
 				FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */,
+				FA4B27561C613B3400C82A0C /* SKKProxyObject.m in Sources */,
+				FA4B27671C61416E00C82A0C /* SKK_MSStylePartCollection.m in Sources */,
 				FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */,
+				FA4B27711C6144F400C82A0C /* STUB_MSStylePart.m in Sources */,
+				FA4B275D1C613B9E00C82A0C /* SKK_MSStyle.m in Sources */,
 				FA4B272C1C600C6600C82A0C /* STUB_MSShapeGroup.m in Sources */,
 				FABFF04C1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m in Sources */,
+				FA4B27611C613F6700C82A0C /* STUB_MSStylePartCollection.m in Sources */,
+				FA4B274A1C613A8E00C82A0C /* STUB_MSColor.m in Sources */,
 				FA4B27281C60062400C82A0C /* STUB_MSLayer.m in Sources */,
+				FA4B273E1C61393400C82A0C /* STUB_MSStyle.m in Sources */,
 				FABFF0511C5FFE4F00CC6112 /* STUB_MSPage.m in Sources */,
+				FA4B274F1C613AF900C82A0C /* STUBObject.m in Sources */,
 				FA4B27241C6005AE00C82A0C /* SKK_MSLayer.m in Sources */,
+				FA4B277D1C615FF100C82A0C /* SKK_MSStyleBasicFill.m in Sources */,
+				FA4B27771C614A9000C82A0C /* SKK_MSStylePart.m in Sources */,
 				FA4B271D1C60036200C82A0C /* SKK_MSPage.m in Sources */,
+				FA4B276D1C61431100C82A0C /* SKK_MSStyleBorder.m in Sources */,
 				FADCE75F1C5FF04100F746B8 /* SKK_MSDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

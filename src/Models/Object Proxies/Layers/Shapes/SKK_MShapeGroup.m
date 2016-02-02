@@ -262,6 +262,7 @@ static NSString * const kXMLElementBezierPathAttributeControlPoint2y = @"control
     return bezierPath;
 }
 
+/// Converts an element's attribute into an NSNumber
 + (NSNumber *)numberFromElement:(NSXMLElement *)element attribute:(NSString *)attributeName {
     NSXMLNode *attribute = [element attributeForName:attributeName];
     if (!attribute) {

@@ -146,6 +146,20 @@
     [self.layer addLayers:stubLayers];
 }
 
+- (SKK_MSStyle *)style {
+    if (![self selectorCheck:self.layer selector:@selector(style)]) {
+        return nil;
+    }
+    
+    STUB_MSStyle *stubStyle = self.layer.style;
+    if (!stubStyle) {
+        return nil;
+    }
+    
+    SKK_MSStyle *style = [[SKK_MSStyle alloc] initWithStyle:stubStyle];
+    return style;
+}
+
 #pragma mark - XML Output
 
 - (NSString *)XMLElementName {
@@ -156,6 +170,11 @@
     NSXMLElement *element = [NSXMLElement elementWithName:[self XMLElementName]];
     
     [element addAttribute:[NSXMLNode attributeWithName:@"name" stringValue:self.name]];
+    
+    NSXMLElement *styleElement = self.style.XMLRepresentation;
+    if (styleElement) {
+        [element addChild:styleElement];
+    }
     
     return element;
 }

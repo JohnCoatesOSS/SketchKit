@@ -93,15 +93,15 @@
     }
     
     if ([layer isKindOfClass:[SKK_MSShapeGroup class]]) {
-        SKK_MSShapeGroup *shapeGroup = (SKK_MSShapeGroup *)layer;
+//        SKK_MSShapeGroup *shapeGroup = (SKK_MSShapeGroup *)layer;
         
-//        NSLog(@"xml: %@", layer.XMLString);
+        NSLog(@"xml: %@", layer.XMLString);
 //        NSLog(@"bezier path: %@", shapeGroup.bezierPath);
-        SKK_MSPage *currentPage = self.pluginContext.document.currentPage;
+//        SKK_MSPage *currentPage = self.pluginContext.document.currentPage;
 //
-        if (currentPage) {
-            [self duplicateShapeGroup:shapeGroup inLayer:currentPage];
-        }
+//        if (currentPage) {
+//            [self duplicateShapeGroup:shapeGroup inLayer:currentPage];
+//        }
     }
 }
 

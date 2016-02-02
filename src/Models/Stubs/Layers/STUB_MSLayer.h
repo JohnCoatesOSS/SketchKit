@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class STUB_MSStyle;
+
 @interface STUB_MSLayer : NSObject
+
 @property NSString *name;
 @property (readonly) NSArray *layers;
 @property (readonly) NSString *objectID;
 @property(nonatomic) struct CGRect frameInArtboard;
 @property(nonatomic) struct CGRect rect;
-//@property (readonly) CSK_MSStyle *style;
+@property (readonly) STUB_MSStyle *style;
 
 
 - (void)invalidateLightweightCopy:(id)arg1;

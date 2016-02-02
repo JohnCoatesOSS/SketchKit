@@ -10,7 +10,7 @@
 
 @class SKK_MSPage;
 
-@interface SKK_MSDocument : NSObject
+@interface SKK_MSDocument : SKKProxyObject
 
 - (SKK_MSPage *)currentPage;
 
