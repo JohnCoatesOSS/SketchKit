@@ -1,5 +1,5 @@
 //
-//  SKK_MSDocument.h
+//  STUB_MSPage.h
 //  SketchKit
 //
 //  Created by John Coates on 2/1/16.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class SKK_MSPage;
-
-@interface SKK_MSDocument : NSObject
-
-- (SKK_MSPage *)currentPage;
+@interface STUB_MSPage : STUB_MSLayer
 
 @end

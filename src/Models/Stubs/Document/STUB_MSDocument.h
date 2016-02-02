@@ -10,7 +10,7 @@
 
 @interface STUB_MSDocument : NSObject
     @property(retain, nonatomic) NSWindow *documentWindow;
-//    - (CSK_MSPage *)currentPage;
+    - (STUB_MSPage *)currentPage;
 //    - (CSK_MSContentDrawView *)currentView;
     - (void)displayMessage:(NSString *)message;
     - (void)reloadInspector;

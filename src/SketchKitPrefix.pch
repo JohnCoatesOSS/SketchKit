@@ -9,8 +9,14 @@
 #import <AppKit/AppKit.h>
 
 // Stubs
+#import "STUB_MSLayer.h"
+#import "STUB_MSPage.h"
 #import "STUB_MSDocument.h"
+#import "STUB_MSShapeGroup.h"
 
 // Object Proxies
+#import "SKK_MSLayer-Private.h"
 #import "SKK_MSDocument-Private.h"
+#import "SKK_MSPage-Private.h"
 #import "SKKPluginContext.h"
+#import "SKK_MShapeGroup-Private.h"

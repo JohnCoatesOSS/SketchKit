@@ -9,17 +9,19 @@
 #import "STUB_MSDocument.h"
 
 @implementation STUB_MSDocument
+
 - (void)displayMessage:(NSString *)message {
 }
-//- (CSK_MSPage *)currentPage {
-//    return nil;
-//}
+
+- (void)reloadInspector {
+}
+
+- (STUB_MSPage *)currentPage {
+    return nil;
+}
 //
 //- (CSK_MSContentDrawView *)currentView{
 //    return nil;
 //}
-
-- (void)reloadInspector {
-}
 
 @end

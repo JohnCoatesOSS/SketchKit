@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
         //    [[NSWorkspace sharedWorkspace] openFile:@"/Users/macbook/Dev/Extensions/Sketch/CSSketch/Examples/flexBox.sketch"];
         
         // sleep for a bit while Sketch launches
-        sleep(2);
+//        sleep(2);
         
         NSString *scriptPath = [projectFolder stringByAppendingPathComponent:@"SketchKit-remote.coscript"];
         NSLog(@"script path: %@", scriptPath);

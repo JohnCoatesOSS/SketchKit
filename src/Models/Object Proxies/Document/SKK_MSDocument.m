@@ -51,4 +51,25 @@
     [self.document reloadInspector];
 }
 
+- (SKK_MSPage *)currentPage {
+    SEL selector = @selector(currentPage);
+    if (![self.document respondsToSelector:selector]) {
+        NSLog(@"Error: %@ doesn't respond to %@",
+              NSStringFromClass(self.document.class),
+              NSStringFromSelector(selector)
+              );
+        return nil;
+    }
+    
+    STUB_MSPage *stubPage = [self.document currentPage];
+    
+    if (!stubPage) {
+        return nil;
+    }
+    
+    SKK_MSPage *page = [[SKK_MSPage alloc] initWithPage:stubPage];
+    
+    return page;
+}
+
 @end

@@ -12,4 +12,5 @@
 
 - (instancetype)initWithMSDocument:(STUB_MSDocument *)document;
 
+
 @end
