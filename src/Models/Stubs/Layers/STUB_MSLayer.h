@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface STUB_MSLayer : NSObject
-@property (readonly) NSString *name;
+@property NSString *name;
 @property (readonly) NSArray *layers;
 @property (readonly) NSString *objectID;
 @property(nonatomic) struct CGRect frameInArtboard;

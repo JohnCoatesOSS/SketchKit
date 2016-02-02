@@ -93,50 +93,27 @@
     }
     
     if ([layer isKindOfClass:[SKK_MSShapeGroup class]]) {
-//        SKK_MSShapeGroup *shapeGroup = (SKK_MSShapeGroup *)layer;
+        SKK_MSShapeGroup *shapeGroup = (SKK_MSShapeGroup *)layer;
         
-        NSLog(@"xml: %@", [layer.XMLRepresentation XMLStringWithOptions:NSXMLNodePrettyPrint | NSXMLNodeCompactEmptyElement]);
+//        NSLog(@"xml: %@", layer.XMLString);
 //        NSLog(@"bezier path: %@", shapeGroup.bezierPath);
-//        SKK_MSPage *currentPage = self.pluginContext.document.currentPage;
-//        
-//        if (currentPage) {
-//            [self duplicateBezierPath:shapeGroup.bezierPath inLayer:currentPage];
-//        }
+        SKK_MSPage *currentPage = self.pluginContext.document.currentPage;
+//
+        if (currentPage) {
+            [self duplicateShapeGroup:shapeGroup inLayer:currentPage];
+        }
     }
 }
 
-- (void)duplicateBezierPath:(NSBezierPath *)bezierPath inLayer:(SKK_MSLayer *)layer {
-    NSInteger elementCount = bezierPath.elementCount;
-    for (int i=0; i < elementCount; i++) {
-        NSPoint points[3];
-        
-        NSBezierPathElement type = [bezierPath elementAtIndex:i
-                                             associatedPoints:points];
-        
-        switch (type) {
-            case NSMoveToBezierPathElement:
-                NSLog(@"move to: %f, %f", points[0].x, points[0].y);
-                break;
-            case NSLineToBezierPathElement:
-                NSLog(@"Line to: %f, %f", points[0].x, points[0].y);
-                break;
-            case NSCurveToBezierPathElement:
-                NSLog(@"curve to: %f, %f; %f, %f; %f, %f",
-                      points[0].x, points[0].y,
-                      points[1].x, points[1].y,
-                      points[2].x, points[2].y
-                      );
-                break;
-            case NSClosePathBezierPathElement:
-                NSLog(@"close path");
-                break;
-        } // switch type
-    } // elements
-
-//    SKK_MSShapeGroup *shapeGroup;
+- (void)duplicateShapeGroup:(SKK_MSShapeGroup *)shapeGroup inLayer:(SKK_MSLayer *)layer {
+    NSXMLElement *element = shapeGroup.XMLRepresentation;
+    SKK_MSShapeGroup *duplicate = [SKK_MSShapeGroup shapeWithXMLElement:element];
 //    shapeGroup = [SKK_MSShapeGroup shapeWithBezierPath:bezierPath];
     
-//    [layer addLayers:@[shapeGroup]];
+    NSLog(@"original XML: %@", shapeGroup.XMLString);
+    NSLog(@"duplicate XML: %@", duplicate.XMLString);
+    
+    [layer addLayers:@[duplicate]];
 }
 
 @end

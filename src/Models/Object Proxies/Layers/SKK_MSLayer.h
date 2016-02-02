@@ -9,7 +9,7 @@
 @interface SKK_MSLayer : NSObject
 
 
-@property (nonatomic, readonly) NSString *name;
+@property (nonatomic) NSString *name;
 
 @property (nonatomic, readonly) BOOL isPage;
 @property (nonatomic, readonly) BOOL isGroup;
@@ -23,5 +23,7 @@
 // XML
 - (NSString *)XMLElementName;
 - (NSXMLElement *)XMLRepresentation;
+- (void)hydrateWithXMLElement:(NSXMLElement *)element;
+@property (nonatomic, readonly) NSString *XMLString;
 
 @end

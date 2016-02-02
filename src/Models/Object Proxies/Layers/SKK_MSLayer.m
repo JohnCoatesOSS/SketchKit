@@ -53,6 +53,20 @@
     return self.layer.name;
 }
 
+- (void)setName:(NSString *)name {
+    NSObject *object = self.layer;
+    SEL selector = @selector(setName:);
+    if (![object respondsToSelector:selector]) {
+        NSLog(@"Error: %@ doesn't respond to %@",
+              NSStringFromClass(object.class),
+              NSStringFromSelector(selector)
+              );
+        return;
+    }
+    
+    [self.layer setName:name];
+}
+
 - (BOOL)isPage {
     if ([self.layer isKindOfClass:NSClassFromString(@"MSPage")]) {
         return TRUE;
@@ -146,6 +160,17 @@
     return element;
 }
 
+- (NSString *)XMLString {
+    return [self.XMLRepresentation XMLStringWithOptions:NSXMLNodePrettyPrint | NSXMLNodeCompactEmptyElement];
+}
+
 #pragma mark - XML Input
+
+- (void)hydrateWithXMLElement:(NSXMLElement *)element {
+    NSXMLNode *nameAttribute = [element attributeForName:@"name"];
+    if (nameAttribute) {
+        self.name = nameAttribute.stringValue;
+    }
+}
 
 @end

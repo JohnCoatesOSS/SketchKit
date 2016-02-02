@@ -10,4 +10,8 @@
 
 @property (retain, nonatomic) NSBezierPath *bezierPath;
 
+
+// XML
++ (instancetype)shapeWithXMLElement:(NSXMLElement *)element;
+
 @end

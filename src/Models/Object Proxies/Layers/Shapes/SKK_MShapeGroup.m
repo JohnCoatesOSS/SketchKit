@@ -95,6 +95,18 @@
     return element;
 }
 
+static NSString * const kXMLElementBezierPath = @"bezierPath";
+static NSString * const kXMLElementBezierPathMoveTo = @"moveTo";
+static NSString * const kXMLElementBezierPathLineTo = @"lineTo";
+static NSString * const kXMLElementBezierPathCurveTo = @"curveTo";
+static NSString * const kXMLElementBezierPathClosePath = @"closePath";
+static NSString * const kXMLElementBezierPathAttributeX = @"x";
+static NSString * const kXMLElementBezierPathAttributeY = @"y";
+static NSString * const kXMLElementBezierPathAttributeControlPoint1x = @"controlPoint1x";
+static NSString * const kXMLElementBezierPathAttributeControlPoint1y = @"controlPoint1y";
+static NSString * const kXMLElementBezierPathAttributeControlPoint2x = @"controlPoint2x";
+static NSString * const kXMLElementBezierPathAttributeControlPoint2y = @"controlPoint2y";
+
 - (NSXMLElement *)bezierPathXML {
     NSBezierPath *bezierPath = self.bezierPath;
     
@@ -102,56 +114,56 @@
         return nil;
     }
     
-    NSXMLElement *element = [NSXMLElement elementWithName:@"bezierPath"];
+    NSXMLElement *element = [NSXMLElement elementWithName:kXMLElementBezierPath];
     
     NSInteger elementCount = bezierPath.elementCount;
     for (int i=0; i < elementCount; i++) {
         NSPoint points[3];
-        
         NSBezierPathElement type = [bezierPath elementAtIndex:i
                                              associatedPoints:points];
-        
         switch (type) {
             case NSMoveToBezierPathElement: {
-                NSXMLElement *pathElement = [NSXMLElement elementWithName:@"moveTo"];
-                NSXMLNode *xAttribute = [NSXMLNode attributeWithName:@"x" stringValue:@(points[0].x).stringValue];
-                NSXMLNode *yAttribute = [NSXMLNode attributeWithName:@"y" stringValue:@(points[0].y).stringValue];
+                NSXMLElement *pathElement = [NSXMLElement elementWithName:kXMLElementBezierPathMoveTo];
+                NSXMLNode *xAttribute = [NSXMLNode attributeWithName:kXMLElementBezierPathAttributeX
+                                                         stringValue:@(points[0].x).stringValue];
+                NSXMLNode *yAttribute = [NSXMLNode attributeWithName:kXMLElementBezierPathAttributeY
+                                                         stringValue:@(points[0].y).stringValue];
                 [pathElement addAttribute:xAttribute];
                 [pathElement addAttribute:yAttribute];
                 [element addChild:pathElement];
-//                NSLog(@"move to: %f, %f", points[0].x, points[0].y);
                 break;
             }
             case NSLineToBezierPathElement: {
-                NSXMLElement *pathElement = [NSXMLElement elementWithName:@"lineTo"];
-                NSXMLNode *xAttribute = [NSXMLNode attributeWithName:@"x" stringValue:@(points[0].x).stringValue];
-                NSXMLNode *yAttribute = [NSXMLNode attributeWithName:@"y" stringValue:@(points[0].y).stringValue];
+                NSXMLElement *pathElement = [NSXMLElement elementWithName:kXMLElementBezierPathLineTo];
+                NSXMLNode *xAttribute = [NSXMLNode attributeWithName:kXMLElementBezierPathAttributeX
+                                                         stringValue:@(points[0].x).stringValue];
+                NSXMLNode *yAttribute = [NSXMLNode attributeWithName:kXMLElementBezierPathAttributeY
+                                                         stringValue:@(points[0].y).stringValue];
                 [pathElement addAttribute:xAttribute];
                 [pathElement addAttribute:yAttribute];
                 [element addChild:pathElement];
-//                NSLog(@"Line to: %f, %f", points[0].x, points[0].y);
                 break;
             }
             case NSCurveToBezierPathElement: {
-                NSXMLElement *pathElement = [NSXMLElement elementWithName:@"curveTo"];
-                [pathElement addAttribute:[NSXMLNode attributeWithName:@"x" stringValue:@(points[0].x).stringValue]];
-                [pathElement addAttribute:[NSXMLNode attributeWithName:@"y" stringValue:@(points[0].y).stringValue]];
-                [pathElement addAttribute:[NSXMLNode attributeWithName:@"controlPoint1x" stringValue:@(points[1].x).stringValue]];
-                [pathElement addAttribute:[NSXMLNode attributeWithName:@"controlPoint1y" stringValue:@(points[1].y).stringValue]];
-                [pathElement addAttribute:[NSXMLNode attributeWithName:@"controlPoint2x" stringValue:@(points[2].x).stringValue]];
-                [pathElement addAttribute:[NSXMLNode attributeWithName:@"controlPoint2y" stringValue:@(points[2].y).stringValue]];
+                NSXMLElement *pathElement = [NSXMLElement elementWithName:kXMLElementBezierPathCurveTo];
+                [pathElement addAttribute:[NSXMLNode attributeWithName:kXMLElementBezierPathAttributeX
+                                                           stringValue:@(points[2].x).stringValue]];
+                [pathElement addAttribute:[NSXMLNode attributeWithName:kXMLElementBezierPathAttributeY
+                                                           stringValue:@(points[2].y).stringValue]];
+                [pathElement addAttribute:[NSXMLNode attributeWithName:kXMLElementBezierPathAttributeControlPoint1x
+                                                           stringValue:@(points[0].x).stringValue]];
+                [pathElement addAttribute:[NSXMLNode attributeWithName:kXMLElementBezierPathAttributeControlPoint1y
+                                                           stringValue:@(points[0].y).stringValue]];
+                [pathElement addAttribute:[NSXMLNode attributeWithName:kXMLElementBezierPathAttributeControlPoint2x
+                                                           stringValue:@(points[1].x).stringValue]];
+                [pathElement addAttribute:[NSXMLNode attributeWithName:kXMLElementBezierPathAttributeControlPoint2y
+                                                           stringValue:@(points[1].y).stringValue]];
                 [element addChild:pathElement];
-//                NSLog(@"curve to: %f, %f; %f, %f; %f, %f",
-//                      points[0].x, points[0].y,
-//                      points[1].x, points[1].y,
-//                      points[2].x, points[2].y
-//                      );
                 break;
             }
             case NSClosePathBezierPathElement: {
-                NSXMLElement *pathElement = [NSXMLElement elementWithName:@"closePath"];
+                NSXMLElement *pathElement = [NSXMLElement elementWithName:kXMLElementBezierPathClosePath];
                 [element addChild:pathElement];
-                NSLog(@"close path");
                 break;
                 }
         } // switch type
@@ -161,8 +173,110 @@
 
 #pragma mark - XML Input
 
-//+ (instancetype)shapeWithXMLElement:(NSXMLElement *)element {
-//    
-//}
++ (instancetype)shapeWithXMLElement:(NSXMLElement *)element {
+    // Ensure bezier path existence
+    NSXMLElement *bezierPathElement = nil;
+    
+    for (NSXMLNode *childNode in element.children) {
+        if (childNode.kind == NSXMLElementKind) {
+            NSXMLElement *childElement = (NSXMLElement *)childNode;
+            
+            if ([childElement.name isEqualToString:kXMLElementBezierPath]) {
+                bezierPathElement = childElement;
+            }
+        }
+    }
+    
+    if (!bezierPathElement) {
+        NSLog(@"Error: Shape group's XML has no bezier path element.");
+        return nil;
+    }
+    
+    NSBezierPath *bezierPath = [self bezierPathFromXML:bezierPathElement];
+    if (!bezierPath) {
+        NSLog(@"Error: Couldn't construct bezier path from element");
+        return nil;
+    }
+    
+    SKK_MSShapeGroup *instance = [self shapeWithBezierPath:bezierPath];
+    [instance hydrateWithXMLElement:element];    
+    return instance;
+    
+}
+
++ (NSBezierPath *)bezierPathFromXML:(NSXMLElement *)bezierPathElement {
+    NSBezierPath *bezierPath = [NSBezierPath bezierPath];
+    
+    for (NSXMLNode *childNode in bezierPathElement.children) {
+        if (childNode.kind == NSXMLElementKind) {
+            NSXMLElement *childElement = (NSXMLElement *)childNode;
+            
+            if ([childElement.name isEqualToString:kXMLElementBezierPathMoveTo]) {
+                NSNumber *x = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeX];
+                NSNumber *y = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeY];
+                
+                if (!x || !y) {
+                    NSLog(@"%@ is missing an attribute (%@).", childElement.name, childElement.XMLString);
+                    continue;
+                }
+                
+                [bezierPath moveToPoint:CGPointMake(x.floatValue, y.floatValue)];
+            }
+            else if ([childElement.name isEqualToString:kXMLElementBezierPathLineTo]) {
+                NSNumber *x = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeX];
+                NSNumber *y = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeY];
+                
+                if (!x || !y) {
+                    NSLog(@"%@ is missing an attribute (%@).", childElement.name, childElement.XMLString);
+                    continue;
+                }
+                
+                [bezierPath lineToPoint:CGPointMake(x.floatValue, y.floatValue)];
+            }
+            else if ([childElement.name isEqualToString:kXMLElementBezierPathCurveTo]) {
+                NSNumber *x = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeX];
+                NSNumber *y = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeY];
+                NSNumber *controlPoint1x = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeControlPoint1x];
+                NSNumber *controlPoint1y = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeControlPoint1y];
+                NSNumber *controlPoint2x = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeControlPoint2x];
+                NSNumber *controlPoint2y = [self numberFromElement:childElement attribute:kXMLElementBezierPathAttributeControlPoint2y];
+                
+                if (!x || !y || !controlPoint1x || !controlPoint1y || !controlPoint2x || !controlPoint2y) {
+                    NSLog(@"%@ is missing an attribute (%@).", childElement.name, childElement.XMLString);
+                    continue;
+                }
+                NSLog(@"curveTo xml: %@", childElement.XMLString);
+                NSLog(@"curveTo %@, %@; %@, %@; %@, %@", x, y, controlPoint1x, controlPoint1y, controlPoint2x, controlPoint2y);
+                
+                [bezierPath curveToPoint:CGPointMake(x.floatValue, y.floatValue)
+                           controlPoint1:CGPointMake(controlPoint1x.floatValue, controlPoint1y.floatValue)
+                           controlPoint2:CGPointMake(controlPoint2x.floatValue, controlPoint2y.floatValue)];
+            }
+            else if ([childElement.name isEqualToString:kXMLElementBezierPathClosePath]) {
+                [bezierPath closePath];
+            }
+            
+        } // Element Node
+    } // Children node enumerate
+    
+    return bezierPath;
+}
+
++ (NSNumber *)numberFromElement:(NSXMLElement *)element attribute:(NSString *)attributeName {
+    NSXMLNode *attribute = [element attributeForName:attributeName];
+    if (!attribute) {
+        return nil;
+    }
+    
+    NSString *attributeValue = attribute.stringValue;
+    if (!attributeValue) {
+        return nil;
+    }
+    
+    NSNumberFormatter *numberFormatter = [NSNumberFormatter new];
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    NSNumber *number = [numberFormatter numberFromString:attributeValue];
+    return number;
+}
 
 @end
