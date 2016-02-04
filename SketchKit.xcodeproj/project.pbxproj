@@ -77,7 +77,6 @@
 		FADCE7421C5FD01D00F746B8 /* SKKTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7401C5FD01D00F746B8 /* SKKTestController.h */; };
 		FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7411C5FD01D00F746B8 /* SKKTestController.m */; };
 		FADCE74B1C5FE25000F746B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE74A1C5FE25000F746B8 /* main.m */; };
-		FADCE7501C5FEA6300F746B8 /* SketchKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FADCE72B1C5FC8C300F746B8 /* SketchKit.framework */; };
 		FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7581C5FEF2E00F746B8 /* SKKPluginContext.h */; };
 		FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7591C5FEF2E00F746B8 /* SKKPluginContext.m */; };
 		FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE75C1C5FF04100F746B8 /* SKK_MSDocument.h */; };
@@ -95,19 +94,6 @@
 			remoteInfo = SketchKit;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FADCE7461C5FE25000F746B8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "$(PROJECT_DIR)/SketchKit.sketchplugin";
-			dstSubfolderSpec = 0;
-			files = (
-				FADCE7501C5FEA6300F746B8 /* SketchKit.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA4B27181C60036200C82A0C /* SKK_MSPage-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSPage-Private.h"; sourceTree = "<group>"; };
@@ -578,7 +564,7 @@
 				FADCE7261C5FC8C200F746B8 /* Sources */,
 				FADCE7271C5FC8C200F746B8 /* Frameworks */,
 				FADCE7281C5FC8C200F746B8 /* Headers */,
-				FADCE7291C5FC8C200F746B8 /* Resources */,
+				FA4B27B71C6402BF00C82A0C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -595,7 +581,6 @@
 			buildPhases = (
 				FADCE7441C5FE25000F746B8 /* Sources */,
 				FADCE7451C5FE25000F746B8 /* Frameworks */,
-				FADCE7461C5FE25000F746B8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -642,15 +627,21 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		FADCE7291C5FC8C200F746B8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		FA4B27B71C6402BF00C82A0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -R \"${PROJECT_DIR}/SketchKit.sketchplugin/${WRAPPER_NAME}\"\ncp -R \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${PROJECT_DIR}/SketchKit.sketchplugin/\"";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FADCE7261C5FC8C200F746B8 /* Sources */ = {
@@ -799,7 +790,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -818,7 +809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
