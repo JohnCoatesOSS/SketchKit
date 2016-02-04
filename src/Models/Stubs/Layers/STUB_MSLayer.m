@@ -27,4 +27,11 @@
 - (void)addLayers:(NSArray <STUB_MSLayer *> *)layers {
 }
 
+#pragma mark - NSCoding
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+}
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder {
+    return nil;
+}
+
 @end

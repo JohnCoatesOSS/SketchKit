@@ -10,7 +10,7 @@
 
 @class STUB_MSStyle;
 
-@interface STUB_MSLayer : NSObject
+@interface STUB_MSLayer : STUB_MSModelBase <NSCoding>
 
 @property NSString *name;
 @property (readonly) NSArray *layers;

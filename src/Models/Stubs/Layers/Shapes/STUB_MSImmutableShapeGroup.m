@@ -10,4 +10,13 @@
 
 @implementation STUB_MSImmutableShapeGroup
 
+- (void)performInitWithMutableModelObject:(id)arg1 {
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+}
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    return nil;
+}
+
 @end

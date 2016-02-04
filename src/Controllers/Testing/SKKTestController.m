@@ -72,11 +72,61 @@
 //        CSK_MSDocument *document = context[@"document"];
 //        CSK_MSPage *page = document.currentPage;
 //        CSK_MSPluginCommand *command = context[@"command"];
-        SKK_MSDocument *document = pluginContext.document;
-        SKK_MSPage *page = document.currentPage;
+//        SKK_MSDocument *document = pluginContext.document;
+//        SKK_MSPage *page = document.currentPage;
         
-        [self walkLayerTree:page];
+//        [self walkLayerTree:page];
+        
+        [self readDocumentTest];
     }); // async dispatch
+}
+
+- (void)readDocumentTest {
+    NSURL *shapeTestURL = [self testDocumentURL];
+    
+    NSLog(@"shape test URL: %@", shapeTestURL.path);
+    SKK_MSDocumentFile *documentFile;
+    documentFile = [[SKK_MSDocumentFile alloc] initWithURL:shapeTestURL];
+    NSError *error = nil;
+    SKK_MSDocumentData *data = [documentFile readDataWithError:&error];
+    
+    if (error) {
+        NSLog(@"error reading file: %@", error);
+        return;
+    }
+    
+    NSLog(@"read data: %@", data);
+    NSLog(@"object: %@", data.immutableModelObject);
+    
+}
+
+- (NSURL *)testDocumentURL {
+    NSString *currentSourcePath = [NSString stringWithFormat:@"%s", __FILE__];
+    NSString *sourceFolder = currentSourcePath;
+    
+    // move up until we find src folder
+    while (sourceFolder != nil &&
+           [sourceFolder.lastPathComponent isEqualToString:@"src"] == FALSE) {
+        NSLog(@"sourceFolder: %@", sourceFolder);
+        
+        if (sourceFolder.pathComponents.count < 2) {
+            break;
+        }
+        
+        sourceFolder = [sourceFolder stringByDeletingLastPathComponent];
+    }
+    
+    if (![sourceFolder.lastPathComponent isEqualToString:@"src"]) {
+        NSLog(@"Couldn't find src folder!");
+        return nil;
+    }
+    
+    NSString *rootFolder = [sourceFolder stringByDeletingLastPathComponent];
+    NSString *sketchDocumentsFolder = [rootFolder stringByAppendingPathComponent:@"Sketch Documents"];
+    NSString *shapeTestPath = [sketchDocumentsFolder stringByAppendingPathComponent:@"SketchKit Shape Test.sketch"];
+    NSURL *shapeTestURL = [NSURL fileURLWithPath:shapeTestPath];
+    
+    return shapeTestURL;
 }
 
 - (void)walkLayerTree:(SKK_MSLayer *)layer {

@@ -48,6 +48,18 @@
     return YES;
 }
 
+- (BOOL)classInstancesSelectorCheck:(Class)class selector:(SEL)selector {
+    if (![class instancesRespondToSelector:selector]) {
+        NSLog(@"Error: %@'s instances don't respond to %@",
+              NSStringFromClass(class),
+              NSStringFromSelector(selector)
+              );
+        return NO;
+    }
+    
+    return YES;
+}
+
 + (BOOL)selectorCheck:(NSObject *)instance selector:(SEL)selector {
     if (![instance respondsToSelector:selector]) {
         NSLog(@"Error: %@ doesn't respond to %@",
@@ -63,6 +75,17 @@
 + (BOOL)classSelectorCheck:(Class)class selector:(SEL)selector {
     if (![class respondsToSelector:selector]) {
         NSLog(@"Error: %@ doesn't respond to %@",
+              NSStringFromClass(class),
+              NSStringFromSelector(selector)
+              );
+        return NO;
+    }
+    
+    return YES;
+}
++ (BOOL)classInstancesSelectorCheck:(Class)class selector:(SEL)selector {
+    if (![class instancesRespondToSelector:selector]) {
+        NSLog(@"Error: %@'s instances don't respond to %@",
               NSStringFromClass(class),
               NSStringFromSelector(selector)
               );

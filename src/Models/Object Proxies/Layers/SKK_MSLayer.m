@@ -7,6 +7,8 @@
 //
 
 #import "SKK_MSLayer-Private.h"
+#import "NSObject+TreeAsDictionarySupport.h"
+#import "STUB_MSImmutableShapeGroup.h"
 
 @interface SKK_MSLayer ()
 
@@ -168,6 +170,23 @@
 
 - (NSXMLElement *)XMLRepresentation {
     NSXMLElement *element = [NSXMLElement elementWithName:[self XMLElementName]];
+    
+    if ([self.layer conformsToProtocol:@protocol(NSCoding)]) {
+        NSLog(@"tree: %@", (id)self.layer.treeAsDictionary);
+//        STUB_MSImmutableShapeGroup *immutableShapeGroup = [NSClassFromString(@"MSImmutableShapeGroup") new];
+//        NSLog(@"shape group: %@", immutableShapeGroup);
+//        if (immutableShapeGroup) {
+//            [immutableShapeGroup performInitWithMutableModelObject:self.layer];
+//            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:immutableShapeGroup];
+//            NSDictionary *tree = [(id)data treeAsDictionary];
+//            NSLog(@"tree: %@", tree);
+//        }
+    }
+    else {
+        NSLog(@"%@ doesn't conform to protocol %@", self.layer, NSStringFromProtocol(@protocol(NSCoding)));
+    }
+    
+//    NSLog(@"encoded layer: %@", )
     
     [element addAttribute:[NSXMLNode attributeWithName:@"name" stringValue:self.name]];
     

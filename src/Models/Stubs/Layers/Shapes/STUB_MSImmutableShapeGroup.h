@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface STUB_MSImmutableShapeGroup : NSObject
+@interface STUB_MSImmutableShapeGroup : NSObject <NSCoding>
+
+- (void)performInitWithMutableModelObject:(id)arg1;
 
 @property(readonly, nonatomic) NSBezierPath *bezierPath;
 @property(readonly, nonatomic) NSBezierPath *bezierPathWithTransforms;

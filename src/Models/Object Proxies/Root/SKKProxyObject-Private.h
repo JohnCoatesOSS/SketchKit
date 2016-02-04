@@ -12,7 +12,9 @@
 
 - (BOOL)selectorCheck:(NSObject *)instance selector:(SEL)selector;
 - (BOOL)classSelectorCheck:(Class)class selector:(SEL)selector;
+- (BOOL)classInstancesSelectorCheck:(Class)class selector:(SEL)selector;
 + (BOOL)selectorCheck:(NSObject *)instance selector:(SEL)selector;
 + (BOOL)classSelectorCheck:(Class)class selector:(SEL)selector;
++ (BOOL)classInstancesSelectorCheck:(Class)class selector:(SEL)selector;
 
 @end
