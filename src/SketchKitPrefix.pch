@@ -6,6 +6,12 @@
 //  Copyright © 2016 John Coates. All rights reserved.
 //
 
+#ifdef DEBUG
+    #define DEBUG 1
+#else
+    #define DEBUG 0
+#endif
+
 #import <AppKit/AppKit.h>
 
 // Protocols
