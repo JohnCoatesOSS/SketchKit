@@ -7,81 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA4B271B1C60036200C82A0C /* SKK_MSPage-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27181C60036200C82A0C /* SKK_MSPage-Private.h */; };
-		FA4B271C1C60036200C82A0C /* SKK_MSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27191C60036200C82A0C /* SKK_MSPage.h */; };
+		FA4B271B1C60036200C82A0C /* SKK_MSPage-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27181C60036200C82A0C /* SKK_MSPage-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B271C1C60036200C82A0C /* SKK_MSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27191C60036200C82A0C /* SKK_MSPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B271D1C60036200C82A0C /* SKK_MSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B271A1C60036200C82A0C /* SKK_MSPage.m */; };
-		FA4B27221C6005AE00C82A0C /* SKK_MSLayer-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B271F1C6005AE00C82A0C /* SKK_MSLayer-Private.h */; };
-		FA4B27231C6005AE00C82A0C /* SKK_MSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27201C6005AE00C82A0C /* SKK_MSLayer.h */; };
+		FA4B27221C6005AE00C82A0C /* SKK_MSLayer-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B271F1C6005AE00C82A0C /* SKK_MSLayer-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27231C6005AE00C82A0C /* SKK_MSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27201C6005AE00C82A0C /* SKK_MSLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27241C6005AE00C82A0C /* SKK_MSLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27211C6005AE00C82A0C /* SKK_MSLayer.m */; };
-		FA4B27271C60062400C82A0C /* STUB_MSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27251C60062400C82A0C /* STUB_MSLayer.h */; };
+		FA4B27271C60062400C82A0C /* STUB_MSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27251C60062400C82A0C /* STUB_MSLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27281C60062400C82A0C /* STUB_MSLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27261C60062400C82A0C /* STUB_MSLayer.m */; };
-		FA4B272B1C600C6600C82A0C /* STUB_MSShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27291C600C6600C82A0C /* STUB_MSShapeGroup.h */; };
+		FA4B272B1C600C6600C82A0C /* STUB_MSShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27291C600C6600C82A0C /* STUB_MSShapeGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B272C1C600C6600C82A0C /* STUB_MSShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B272A1C600C6600C82A0C /* STUB_MSShapeGroup.m */; };
-		FA4B27311C600D4A00C82A0C /* SKK_MShapeGroup-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B272E1C600D4A00C82A0C /* SKK_MShapeGroup-Private.h */; };
-		FA4B27321C600D4A00C82A0C /* SKK_MShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B272F1C600D4A00C82A0C /* SKK_MShapeGroup.h */; };
+		FA4B27311C600D4A00C82A0C /* SKK_MShapeGroup-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B272E1C600D4A00C82A0C /* SKK_MShapeGroup-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27321C600D4A00C82A0C /* SKK_MShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B272F1C600D4A00C82A0C /* SKK_MShapeGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27331C600D4A00C82A0C /* SKK_MShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27301C600D4A00C82A0C /* SKK_MShapeGroup.m */; };
-		FA4B273D1C61393400C82A0C /* STUB_MSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B273B1C61393400C82A0C /* STUB_MSStyle.h */; };
+		FA4B273D1C61393400C82A0C /* STUB_MSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B273B1C61393400C82A0C /* STUB_MSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B273E1C61393400C82A0C /* STUB_MSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B273C1C61393400C82A0C /* STUB_MSStyle.m */; };
-		FA4B27411C61398100C82A0C /* STUB_MSStyleBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B273F1C61398100C82A0C /* STUB_MSStyleBorder.h */; };
+		FA4B27411C61398100C82A0C /* STUB_MSStyleBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B273F1C61398100C82A0C /* STUB_MSStyleBorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27421C61398100C82A0C /* STUB_MSStyleBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27401C61398100C82A0C /* STUB_MSStyleBorder.m */; };
-		FA4B27451C613A7800C82A0C /* STUB_MSStyleFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27431C613A7800C82A0C /* STUB_MSStyleFill.h */; };
+		FA4B27451C613A7800C82A0C /* STUB_MSStyleFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27431C613A7800C82A0C /* STUB_MSStyleFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27461C613A7800C82A0C /* STUB_MSStyleFill.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27441C613A7800C82A0C /* STUB_MSStyleFill.m */; };
-		FA4B27491C613A8E00C82A0C /* STUB_MSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27471C613A8E00C82A0C /* STUB_MSColor.h */; };
+		FA4B27491C613A8E00C82A0C /* STUB_MSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27471C613A8E00C82A0C /* STUB_MSColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B274A1C613A8E00C82A0C /* STUB_MSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27481C613A8E00C82A0C /* STUB_MSColor.m */; };
-		FA4B274E1C613AF900C82A0C /* STUBObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B274C1C613AF900C82A0C /* STUBObject.h */; };
+		FA4B274E1C613AF900C82A0C /* STUBObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B274C1C613AF900C82A0C /* STUBObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B274F1C613AF900C82A0C /* STUBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B274D1C613AF900C82A0C /* STUBObject.m */; };
-		FA4B27541C613B3400C82A0C /* SKKProxyObject-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27511C613B3400C82A0C /* SKKProxyObject-Private.h */; };
-		FA4B27551C613B3400C82A0C /* SKKProxyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27521C613B3400C82A0C /* SKKProxyObject.h */; };
+		FA4B27541C613B3400C82A0C /* SKKProxyObject-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27511C613B3400C82A0C /* SKKProxyObject-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27551C613B3400C82A0C /* SKKProxyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27521C613B3400C82A0C /* SKKProxyObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27561C613B3400C82A0C /* SKKProxyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27531C613B3400C82A0C /* SKKProxyObject.m */; };
-		FA4B275B1C613B9E00C82A0C /* SKK_MSStyle-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27581C613B9E00C82A0C /* SKK_MSStyle-Private.h */; };
-		FA4B275C1C613B9E00C82A0C /* SKK_MSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27591C613B9E00C82A0C /* SKK_MSStyle.h */; };
+		FA4B275B1C613B9E00C82A0C /* SKK_MSStyle-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27581C613B9E00C82A0C /* SKK_MSStyle-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B275C1C613B9E00C82A0C /* SKK_MSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27591C613B9E00C82A0C /* SKK_MSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B275D1C613B9E00C82A0C /* SKK_MSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B275A1C613B9E00C82A0C /* SKK_MSStyle.m */; };
-		FA4B27601C613F6700C82A0C /* STUB_MSStylePartCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B275E1C613F6700C82A0C /* STUB_MSStylePartCollection.h */; };
+		FA4B27601C613F6700C82A0C /* STUB_MSStylePartCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B275E1C613F6700C82A0C /* STUB_MSStylePartCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27611C613F6700C82A0C /* STUB_MSStylePartCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B275F1C613F6700C82A0C /* STUB_MSStylePartCollection.m */; };
-		FA4B27651C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27621C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h */; };
-		FA4B27661C61416E00C82A0C /* SKK_MSStylePartCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27631C61416E00C82A0C /* SKK_MSStylePartCollection.h */; };
+		FA4B27651C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27621C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27661C61416E00C82A0C /* SKK_MSStylePartCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27631C61416E00C82A0C /* SKK_MSStylePartCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27671C61416E00C82A0C /* SKK_MSStylePartCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27641C61416E00C82A0C /* SKK_MSStylePartCollection.m */; };
-		FA4B276B1C61431100C82A0C /* SKK_MSStyleBorder-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27681C61431100C82A0C /* SKK_MSStyleBorder-Private.h */; };
-		FA4B276C1C61431100C82A0C /* SKK_MSStyleBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27691C61431100C82A0C /* SKK_MSStyleBorder.h */; };
+		FA4B276B1C61431100C82A0C /* SKK_MSStyleBorder-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27681C61431100C82A0C /* SKK_MSStyleBorder-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B276C1C61431100C82A0C /* SKK_MSStyleBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27691C61431100C82A0C /* SKK_MSStyleBorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B276D1C61431100C82A0C /* SKK_MSStyleBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B276A1C61431100C82A0C /* SKK_MSStyleBorder.m */; };
-		FA4B27701C6144F400C82A0C /* STUB_MSStylePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B276E1C6144F400C82A0C /* STUB_MSStylePart.h */; };
+		FA4B27701C6144F400C82A0C /* STUB_MSStylePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B276E1C6144F400C82A0C /* STUB_MSStylePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27711C6144F400C82A0C /* STUB_MSStylePart.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B276F1C6144F400C82A0C /* STUB_MSStylePart.m */; };
-		FA4B27751C614A9000C82A0C /* SKK_MSStylePart-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27721C614A9000C82A0C /* SKK_MSStylePart-Private.h */; };
-		FA4B27761C614A9000C82A0C /* SKK_MSStylePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27731C614A9000C82A0C /* SKK_MSStylePart.h */; };
+		FA4B27751C614A9000C82A0C /* SKK_MSStylePart-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27721C614A9000C82A0C /* SKK_MSStylePart-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27761C614A9000C82A0C /* SKK_MSStylePart.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27731C614A9000C82A0C /* SKK_MSStylePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27771C614A9000C82A0C /* SKK_MSStylePart.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27741C614A9000C82A0C /* SKK_MSStylePart.m */; };
-		FA4B277B1C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27781C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h */; };
-		FA4B277C1C615FF100C82A0C /* SKK_MSStyleBasicFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27791C615FF100C82A0C /* SKK_MSStyleBasicFill.h */; };
+		FA4B277B1C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27781C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B277C1C615FF100C82A0C /* SKK_MSStyleBasicFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27791C615FF100C82A0C /* SKK_MSStyleBasicFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B277D1C615FF100C82A0C /* SKK_MSStyleBasicFill.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B277A1C615FF100C82A0C /* SKK_MSStyleBasicFill.m */; };
-		FA4B27811C61603400C82A0C /* SKK_MSColor-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B277E1C61603400C82A0C /* SKK_MSColor-Private.h */; };
-		FA4B27821C61603400C82A0C /* SKK_MSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B277F1C61603400C82A0C /* SKK_MSColor.h */; };
+		FA4B27811C61603400C82A0C /* SKK_MSColor-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B277E1C61603400C82A0C /* SKK_MSColor-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27821C61603400C82A0C /* SKK_MSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B277F1C61603400C82A0C /* SKK_MSColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27831C61603400C82A0C /* SKK_MSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27801C61603400C82A0C /* SKK_MSColor.m */; };
-		FA4B27861C61604C00C82A0C /* STUB_MSStyleBasicFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27841C61604C00C82A0C /* STUB_MSStyleBasicFill.h */; };
+		FA4B27861C61604C00C82A0C /* STUB_MSStyleBasicFill.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27841C61604C00C82A0C /* STUB_MSStyleBasicFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27871C61604C00C82A0C /* STUB_MSStyleBasicFill.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27851C61604C00C82A0C /* STUB_MSStyleBasicFill.m */; };
-		FA4B278E1C63EA4000C82A0C /* STUB_MSDocumentFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B278C1C63EA4000C82A0C /* STUB_MSDocumentFile.h */; };
+		FA4B278E1C63EA4000C82A0C /* STUB_MSDocumentFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B278C1C63EA4000C82A0C /* STUB_MSDocumentFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B278F1C63EA4000C82A0C /* STUB_MSDocumentFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B278D1C63EA4000C82A0C /* STUB_MSDocumentFile.m */; };
-		FA4B27931C63ECCF00C82A0C /* SKK_MSDocumentFile-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27901C63ECCF00C82A0C /* SKK_MSDocumentFile-Private.h */; };
-		FA4B27941C63ECCF00C82A0C /* SKK_MSDocumentFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27911C63ECCF00C82A0C /* SKK_MSDocumentFile.h */; };
+		FA4B27931C63ECCF00C82A0C /* SKK_MSDocumentFile-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27901C63ECCF00C82A0C /* SKK_MSDocumentFile-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27941C63ECCF00C82A0C /* SKK_MSDocumentFile.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27911C63ECCF00C82A0C /* SKK_MSDocumentFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27951C63ECCF00C82A0C /* SKK_MSDocumentFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27921C63ECCF00C82A0C /* SKK_MSDocumentFile.m */; };
-		FA4B27991C63F04A00C82A0C /* STUB_MSModelBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27971C63F04A00C82A0C /* STUB_MSModelBase.h */; };
+		FA4B27991C63F04A00C82A0C /* STUB_MSModelBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27971C63F04A00C82A0C /* STUB_MSModelBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B279A1C63F04A00C82A0C /* STUB_MSModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27981C63F04A00C82A0C /* STUB_MSModelBase.m */; };
-		FA4B279D1C63F0DE00C82A0C /* STUB_MSDocumentData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B279B1C63F0DE00C82A0C /* STUB_MSDocumentData.h */; };
+		FA4B279D1C63F0DE00C82A0C /* STUB_MSDocumentData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B279B1C63F0DE00C82A0C /* STUB_MSDocumentData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B279E1C63F0DE00C82A0C /* STUB_MSDocumentData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B279C1C63F0DE00C82A0C /* STUB_MSDocumentData.m */; };
-		FA4B27A21C63F27400C82A0C /* SKK_MSDocumentData-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B279F1C63F27400C82A0C /* SKK_MSDocumentData-Private.h */; };
-		FA4B27A31C63F27400C82A0C /* SKK_MSDocumentData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27A01C63F27400C82A0C /* SKK_MSDocumentData.h */; };
+		FA4B27A21C63F27400C82A0C /* SKK_MSDocumentData-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B279F1C63F27400C82A0C /* SKK_MSDocumentData-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27A31C63F27400C82A0C /* SKK_MSDocumentData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27A01C63F27400C82A0C /* SKK_MSDocumentData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B27A41C63F27400C82A0C /* SKK_MSDocumentData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27A11C63F27400C82A0C /* SKK_MSDocumentData.m */; };
-		FABFF04B1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FABFF0491C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h */; };
+		FA4B27C51C641F5900C82A0C /* SketchKit-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27C41C641F4200C82A0C /* SketchKit-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27C61C641F9700C82A0C /* SKK_MSDocument-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7661C5FF29700F746B8 /* SKK_MSDocument-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27C71C64201F00C82A0C /* SKKXMLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27891C61627000C82A0C /* SKKXMLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27CB1C6525D300C82A0C /* STUB_MSTextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27C91C6525D300C82A0C /* STUB_MSTextLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27CC1C6525D300C82A0C /* STUB_MSTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27CA1C6525D300C82A0C /* STUB_MSTextLayer.m */; };
+		FA4B27D11C65270900C82A0C /* SKK_MSTextLayer-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27CE1C65270900C82A0C /* SKK_MSTextLayer-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27D21C65270900C82A0C /* SKK_MSTextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27CF1C65270900C82A0C /* SKK_MSTextLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4B27D31C65270900C82A0C /* SKK_MSTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B27D01C65270900C82A0C /* SKK_MSTextLayer.m */; };
+		FABFF04B1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = FABFF0491C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FABFF04C1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FABFF04A1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m */; };
-		FABFF0501C5FFE4F00CC6112 /* STUB_MSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FABFF04E1C5FFE4F00CC6112 /* STUB_MSPage.h */; };
+		FABFF0501C5FFE4F00CC6112 /* STUB_MSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FABFF04E1C5FFE4F00CC6112 /* STUB_MSPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FABFF0511C5FFE4F00CC6112 /* STUB_MSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = FABFF04F1C5FFE4F00CC6112 /* STUB_MSPage.m */; };
 		FADCE72F1C5FC8C300F746B8 /* SketchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE72E1C5FC8C300F746B8 /* SketchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FADCE7421C5FD01D00F746B8 /* SKKTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7401C5FD01D00F746B8 /* SKKTestController.h */; };
+		FADCE7421C5FD01D00F746B8 /* SKKTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7401C5FD01D00F746B8 /* SKKTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7411C5FD01D00F746B8 /* SKKTestController.m */; };
 		FADCE74B1C5FE25000F746B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE74A1C5FE25000F746B8 /* main.m */; };
-		FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7581C5FEF2E00F746B8 /* SKKPluginContext.h */; };
+		FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7581C5FEF2E00F746B8 /* SKKPluginContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7591C5FEF2E00F746B8 /* SKKPluginContext.m */; };
-		FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE75C1C5FF04100F746B8 /* SKK_MSDocument.h */; };
+		FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE75C1C5FF04100F746B8 /* SKK_MSDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADCE75F1C5FF04100F746B8 /* SKK_MSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE75D1C5FF04100F746B8 /* SKK_MSDocument.m */; };
-		FADCE7631C5FF09300F746B8 /* STUB_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7611C5FF09300F746B8 /* STUB_MSDocument.h */; };
+		FADCE7631C5FF09300F746B8 /* STUB_MSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FADCE7611C5FF09300F746B8 /* STUB_MSDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FADCE7641C5FF09300F746B8 /* STUB_MSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FADCE7621C5FF09300F746B8 /* STUB_MSDocument.m */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +168,12 @@
 		FA4B279F1C63F27400C82A0C /* SKK_MSDocumentData-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSDocumentData-Private.h"; sourceTree = "<group>"; };
 		FA4B27A01C63F27400C82A0C /* SKK_MSDocumentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSDocumentData.h; sourceTree = "<group>"; };
 		FA4B27A11C63F27400C82A0C /* SKK_MSDocumentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSDocumentData.m; sourceTree = "<group>"; };
+		FA4B27C41C641F4200C82A0C /* SketchKit-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SketchKit-Private.h"; sourceTree = "<group>"; };
+		FA4B27C91C6525D300C82A0C /* STUB_MSTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSTextLayer.h; sourceTree = "<group>"; };
+		FA4B27CA1C6525D300C82A0C /* STUB_MSTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSTextLayer.m; sourceTree = "<group>"; };
+		FA4B27CE1C65270900C82A0C /* SKK_MSTextLayer-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSTextLayer-Private.h"; sourceTree = "<group>"; };
+		FA4B27CF1C65270900C82A0C /* SKK_MSTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSTextLayer.h; sourceTree = "<group>"; };
+		FA4B27D01C65270900C82A0C /* SKK_MSTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSTextLayer.m; sourceTree = "<group>"; };
 		FABFF0491C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSImmutableShapeGroup.h; sourceTree = "<group>"; };
 		FABFF04A1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSImmutableShapeGroup.m; sourceTree = "<group>"; };
 		FABFF04E1C5FFE4F00CC6112 /* STUB_MSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSPage.h; sourceTree = "<group>"; };
@@ -280,6 +294,7 @@
 			children = (
 				FADCE72E1C5FC8C300F746B8 /* SketchKit.h */,
 				FA4B27891C61627000C82A0C /* SKKXMLProtocol.h */,
+				FA4B27C41C641F4200C82A0C /* SketchKit-Private.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -301,9 +316,29 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		FA4B27C81C65258900C82A0C /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B27C91C6525D300C82A0C /* STUB_MSTextLayer.h */,
+				FA4B27CA1C6525D300C82A0C /* STUB_MSTextLayer.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		FA4B27CD1C6526E100C82A0C /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B27CE1C65270900C82A0C /* SKK_MSTextLayer-Private.h */,
+				FA4B27CF1C65270900C82A0C /* SKK_MSTextLayer.h */,
+				FA4B27D01C65270900C82A0C /* SKK_MSTextLayer.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		FABFF0471C5FFC2600CC6112 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B27C81C65258900C82A0C /* Text */,
 				FA4B27341C6138EB00C82A0C /* Style */,
 				FABFF0481C5FFC4400CC6112 /* Shapes */,
 				FA4B27251C60062400C82A0C /* STUB_MSLayer.h */,
@@ -470,6 +505,7 @@
 		FADCE7561C5FEED100F746B8 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B27CD1C6526E100C82A0C /* Text */,
 				FA4B27571C613B8700C82A0C /* Style */,
 				FA4B272D1C600D2500C82A0C /* Shapes */,
 				FA4B271F1C6005AE00C82A0C /* SKK_MSLayer-Private.h */,
@@ -508,7 +544,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADCE7421C5FD01D00F746B8 /* SKKTestController.h in Headers */,
+				FA4B27C61C641F9700C82A0C /* SKK_MSDocument-Private.h in Headers */,
 				FA4B27451C613A7800C82A0C /* STUB_MSStyleFill.h in Headers */,
+				FA4B27C71C64201F00C82A0C /* SKKXMLProtocol.h in Headers */,
 				FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */,
 				FA4B274E1C613AF900C82A0C /* STUBObject.h in Headers */,
 				FA4B27A21C63F27400C82A0C /* SKK_MSDocumentData-Private.h in Headers */,
@@ -528,6 +566,7 @@
 				FA4B27651C61416E00C82A0C /* SKK_MSStylePartCollection-Private.h in Headers */,
 				FA4B276C1C61431100C82A0C /* SKK_MSStyleBorder.h in Headers */,
 				FA4B277B1C615FF100C82A0C /* SKK_MSStyleBasicFill-Private.h in Headers */,
+				FA4B27CB1C6525D300C82A0C /* STUB_MSTextLayer.h in Headers */,
 				FABFF04B1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.h in Headers */,
 				FA4B27601C613F6700C82A0C /* STUB_MSStylePartCollection.h in Headers */,
 				FA4B27931C63ECCF00C82A0C /* SKK_MSDocumentFile-Private.h in Headers */,
@@ -537,9 +576,11 @@
 				FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */,
 				FADCE72F1C5FC8C300F746B8 /* SketchKit.h in Headers */,
 				FA4B27761C614A9000C82A0C /* SKK_MSStylePart.h in Headers */,
+				FA4B27D11C65270900C82A0C /* SKK_MSTextLayer-Private.h in Headers */,
 				FA4B278E1C63EA4000C82A0C /* STUB_MSDocumentFile.h in Headers */,
 				FABFF0501C5FFE4F00CC6112 /* STUB_MSPage.h in Headers */,
 				FA4B271C1C60036200C82A0C /* SKK_MSPage.h in Headers */,
+				FA4B27D21C65270900C82A0C /* SKK_MSTextLayer.h in Headers */,
 				FA4B271B1C60036200C82A0C /* SKK_MSPage-Private.h in Headers */,
 				FA4B275B1C613B9E00C82A0C /* SKK_MSStyle-Private.h in Headers */,
 				FA4B27A31C63F27400C82A0C /* SKK_MSDocumentData.h in Headers */,
@@ -551,6 +592,7 @@
 				FA4B27991C63F04A00C82A0C /* STUB_MSModelBase.h in Headers */,
 				FA4B27491C613A8E00C82A0C /* STUB_MSColor.h in Headers */,
 				FA4B279D1C63F0DE00C82A0C /* STUB_MSDocumentData.h in Headers */,
+				FA4B27C51C641F5900C82A0C /* SketchKit-Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,9 +699,11 @@
 				FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */,
 				FA4B27561C613B3400C82A0C /* SKKProxyObject.m in Sources */,
 				FA4B27671C61416E00C82A0C /* SKK_MSStylePartCollection.m in Sources */,
+				FA4B27D31C65270900C82A0C /* SKK_MSTextLayer.m in Sources */,
 				FA4B27A41C63F27400C82A0C /* SKK_MSDocumentData.m in Sources */,
 				FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */,
 				FA4B27711C6144F400C82A0C /* STUB_MSStylePart.m in Sources */,
+				FA4B27CC1C6525D300C82A0C /* STUB_MSTextLayer.m in Sources */,
 				FA4B275D1C613B9E00C82A0C /* SKK_MSStyle.m in Sources */,
 				FA4B272C1C600C6600C82A0C /* STUB_MSShapeGroup.m in Sources */,
 				FABFF04C1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m in Sources */,

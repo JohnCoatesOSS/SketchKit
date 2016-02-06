@@ -7,6 +7,7 @@
 //
 
 #import "SKK_MSStyleBasicFill-Private.h"
+#import "SKK_MSStylePart-Private.h"
 
 @interface SKK_MSStyleBasicFill ()
 
