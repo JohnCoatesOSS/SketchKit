@@ -6,6 +6,12 @@
 //  Copyright © 2016 John Coates. All rights reserved.
 //
 
+#import "STUBObject.h"
+
 @interface SKKProxyObject : NSObject
+
+@property (strong) STUBObject *targetObject;
+
+- (instancetype)initWithTarget:(STUBObject *)targetObject;
 
 @end

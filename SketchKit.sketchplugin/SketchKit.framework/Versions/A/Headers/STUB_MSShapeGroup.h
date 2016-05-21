@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "STUB_MSShapePath.h"
 
 @interface STUB_MSShapeGroup : STUB_MSLayer
+
+@property(retain, nonatomic) STUB_MSShapePath *path;
 
 + (instancetype)shapeWithBezierPath:(NSBezierPath *)bezierPath;
 

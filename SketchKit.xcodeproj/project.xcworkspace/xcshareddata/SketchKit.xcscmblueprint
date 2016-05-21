@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B5579E252A63267B1B29E4E7A348EF9ECB94F757",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DB0AA8B77050AFE7C658D7A871F99ECFEA6230C3" : 0,
+    "B5579E252A63267B1B29E4E7A348EF9ECB94F757" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40010C2A-1D62-44E5-AD4A-3A8B089FB48D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DB0AA8B77050AFE7C658D7A871F99ECFEA6230C3" : "..",
+    "B5579E252A63267B1B29E4E7A348EF9ECB94F757" : "SketchKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SketchKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SketchKit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnCoates\/SketchKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5579E252A63267B1B29E4E7A348EF9ECB94F757"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JohnCoates\/CSSketch.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB0AA8B77050AFE7C658D7A871F99ECFEA6230C3"
+    }
+  ]
+}

@@ -18,6 +18,9 @@
     return true;
 }
 
+- (void)invalidateCachedImmutableModelObjects {
+}
+
 - (void)invalidateLightweightCopy:(id)arg1 {
 }
 

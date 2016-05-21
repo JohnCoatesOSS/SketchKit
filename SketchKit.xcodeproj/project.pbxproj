@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA026D061CBCAA3100D83D34 /* STUB_MSShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = FA026D041CBCAA3100D83D34 /* STUB_MSShapePath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA026D071CBCAA3100D83D34 /* STUB_MSShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D051CBCAA3100D83D34 /* STUB_MSShapePath.m */; };
+		FA026D0A1CBCAB0200D83D34 /* STUB_MSCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FA026D081CBCAB0200D83D34 /* STUB_MSCurvePoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA026D0B1CBCAB0200D83D34 /* STUB_MSCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D091CBCAB0200D83D34 /* STUB_MSCurvePoint.m */; };
+		FA026D0E1CBCAF0900D83D34 /* SKK_MSShapePathLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA026D0C1CBCAF0900D83D34 /* SKK_MSShapePathLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA026D0F1CBCAF0900D83D34 /* SKK_MSShapePathLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D0D1CBCAF0900D83D34 /* SKK_MSShapePathLayer.m */; };
+		FA026D121CBCAF3400D83D34 /* STUB_MSShapePathLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA026D101CBCAF3400D83D34 /* STUB_MSShapePathLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA026D131CBCAF3400D83D34 /* STUB_MSShapePathLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D111CBCAF3400D83D34 /* STUB_MSShapePathLayer.m */; };
+		FA026D171CBCB0AF00D83D34 /* SKK_MSShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = FA026D151CBCB0AF00D83D34 /* SKK_MSShapePath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA026D181CBCB0AF00D83D34 /* SKK_MSShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = FA026D161CBCB0AF00D83D34 /* SKK_MSShapePath.m */; };
 		FA4B271B1C60036200C82A0C /* SKK_MSPage-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27181C60036200C82A0C /* SKK_MSPage-Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B271C1C60036200C82A0C /* SKK_MSPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4B27191C60036200C82A0C /* SKK_MSPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4B271D1C60036200C82A0C /* SKK_MSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B271A1C60036200C82A0C /* SKK_MSPage.m */; };
@@ -104,6 +114,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA026D041CBCAA3100D83D34 /* STUB_MSShapePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSShapePath.h; sourceTree = "<group>"; };
+		FA026D051CBCAA3100D83D34 /* STUB_MSShapePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSShapePath.m; sourceTree = "<group>"; };
+		FA026D081CBCAB0200D83D34 /* STUB_MSCurvePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSCurvePoint.h; sourceTree = "<group>"; };
+		FA026D091CBCAB0200D83D34 /* STUB_MSCurvePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSCurvePoint.m; sourceTree = "<group>"; };
+		FA026D0C1CBCAF0900D83D34 /* SKK_MSShapePathLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSShapePathLayer.h; sourceTree = "<group>"; };
+		FA026D0D1CBCAF0900D83D34 /* SKK_MSShapePathLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSShapePathLayer.m; sourceTree = "<group>"; };
+		FA026D101CBCAF3400D83D34 /* STUB_MSShapePathLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUB_MSShapePathLayer.h; sourceTree = "<group>"; };
+		FA026D111CBCAF3400D83D34 /* STUB_MSShapePathLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUB_MSShapePathLayer.m; sourceTree = "<group>"; };
+		FA026D151CBCB0AF00D83D34 /* SKK_MSShapePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSShapePath.h; sourceTree = "<group>"; };
+		FA026D161CBCB0AF00D83D34 /* SKK_MSShapePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSShapePath.m; sourceTree = "<group>"; };
 		FA4B27181C60036200C82A0C /* SKK_MSPage-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKK_MSPage-Private.h"; sourceTree = "<group>"; };
 		FA4B27191C60036200C82A0C /* SKK_MSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKK_MSPage.h; sourceTree = "<group>"; };
 		FA4B271A1C60036200C82A0C /* SKK_MSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKK_MSPage.m; sourceTree = "<group>"; };
@@ -214,12 +234,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA026D031CBCAA1900D83D34 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				FA026D041CBCAA3100D83D34 /* STUB_MSShapePath.h */,
+				FA026D051CBCAA3100D83D34 /* STUB_MSShapePath.m */,
+				FA026D081CBCAB0200D83D34 /* STUB_MSCurvePoint.h */,
+				FA026D091CBCAB0200D83D34 /* STUB_MSCurvePoint.m */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		FA026D141CBCB08A00D83D34 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				FA026D151CBCB0AF00D83D34 /* SKK_MSShapePath.h */,
+				FA026D161CBCB0AF00D83D34 /* SKK_MSShapePath.m */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
 		FA4B272D1C600D2500C82A0C /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
 				FA4B272E1C600D4A00C82A0C /* SKK_MShapeGroup-Private.h */,
 				FA4B272F1C600D4A00C82A0C /* SKK_MShapeGroup.h */,
 				FA4B27301C600D4A00C82A0C /* SKK_MShapeGroup.m */,
+				FA026D0C1CBCAF0900D83D34 /* SKK_MSShapePathLayer.h */,
+				FA026D0D1CBCAF0900D83D34 /* SKK_MSShapePathLayer.m */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -354,6 +396,8 @@
 				FABFF04A1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m */,
 				FA4B27291C600C6600C82A0C /* STUB_MSShapeGroup.h */,
 				FA4B272A1C600C6600C82A0C /* STUB_MSShapeGroup.m */,
+				FA026D101CBCAF3400D83D34 /* STUB_MSShapePathLayer.h */,
+				FA026D111CBCAF3400D83D34 /* STUB_MSShapePathLayer.m */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -429,6 +473,7 @@
 		FADCE73C1C5FCD6900F746B8 /* Object Proxies */ = {
 			isa = PBXGroup;
 			children = (
+				FA026D141CBCB08A00D83D34 /* Shapes */,
 				FA4B27501C613B1300C82A0C /* Root */,
 				FADCE7561C5FEED100F746B8 /* Layers */,
 				FADCE7551C5FEE7700F746B8 /* Document */,
@@ -466,6 +511,7 @@
 		FADCE7531C5FEE4400F746B8 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				FA026D031CBCAA1900D83D34 /* Shapes */,
 				FA4B27961C63F02100C82A0C /* Base */,
 				FA4B278A1C63D9B800C82A0C /* Categories */,
 				FA4B274B1C613ADA00C82A0C /* Root */,
@@ -548,7 +594,9 @@
 				FA4B27451C613A7800C82A0C /* STUB_MSStyleFill.h in Headers */,
 				FA4B27C71C64201F00C82A0C /* SKKXMLProtocol.h in Headers */,
 				FADCE75E1C5FF04100F746B8 /* SKK_MSDocument.h in Headers */,
+				FA026D0E1CBCAF0900D83D34 /* SKK_MSShapePathLayer.h in Headers */,
 				FA4B274E1C613AF900C82A0C /* STUBObject.h in Headers */,
+				FA026D061CBCAA3100D83D34 /* STUB_MSShapePath.h in Headers */,
 				FA4B27A21C63F27400C82A0C /* SKK_MSDocumentData-Private.h in Headers */,
 				FA4B27751C614A9000C82A0C /* SKK_MSStylePart-Private.h in Headers */,
 				FA4B276B1C61431100C82A0C /* SKK_MSStyleBorder-Private.h in Headers */,
@@ -571,6 +619,7 @@
 				FA4B27601C613F6700C82A0C /* STUB_MSStylePartCollection.h in Headers */,
 				FA4B27931C63ECCF00C82A0C /* SKK_MSDocumentFile-Private.h in Headers */,
 				FA4B27271C60062400C82A0C /* STUB_MSLayer.h in Headers */,
+				FA026D171CBCB0AF00D83D34 /* SKK_MSShapePath.h in Headers */,
 				FA4B27321C600D4A00C82A0C /* SKK_MShapeGroup.h in Headers */,
 				FA4B27701C6144F400C82A0C /* STUB_MSStylePart.h in Headers */,
 				FADCE75A1C5FEF2E00F746B8 /* SKKPluginContext.h in Headers */,
@@ -583,8 +632,10 @@
 				FA4B27D21C65270900C82A0C /* SKK_MSTextLayer.h in Headers */,
 				FA4B271B1C60036200C82A0C /* SKK_MSPage-Private.h in Headers */,
 				FA4B275B1C613B9E00C82A0C /* SKK_MSStyle-Private.h in Headers */,
+				FA026D0A1CBCAB0200D83D34 /* STUB_MSCurvePoint.h in Headers */,
 				FA4B27A31C63F27400C82A0C /* SKK_MSDocumentData.h in Headers */,
 				FA4B27541C613B3400C82A0C /* SKKProxyObject-Private.h in Headers */,
+				FA026D121CBCAF3400D83D34 /* STUB_MSShapePathLayer.h in Headers */,
 				FA4B27861C61604C00C82A0C /* STUB_MSStyleBasicFill.h in Headers */,
 				FA4B272B1C600C6600C82A0C /* STUB_MSShapeGroup.h in Headers */,
 				FA4B27811C61603400C82A0C /* SKK_MSColor-Private.h in Headers */,
@@ -698,12 +749,14 @@
 				FA4B27871C61604C00C82A0C /* STUB_MSStyleBasicFill.m in Sources */,
 				FADCE75B1C5FEF2E00F746B8 /* SKKPluginContext.m in Sources */,
 				FA4B27561C613B3400C82A0C /* SKKProxyObject.m in Sources */,
+				FA026D181CBCB0AF00D83D34 /* SKK_MSShapePath.m in Sources */,
 				FA4B27671C61416E00C82A0C /* SKK_MSStylePartCollection.m in Sources */,
 				FA4B27D31C65270900C82A0C /* SKK_MSTextLayer.m in Sources */,
 				FA4B27A41C63F27400C82A0C /* SKK_MSDocumentData.m in Sources */,
 				FADCE7431C5FD01D00F746B8 /* SKKTestController.m in Sources */,
 				FA4B27711C6144F400C82A0C /* STUB_MSStylePart.m in Sources */,
 				FA4B27CC1C6525D300C82A0C /* STUB_MSTextLayer.m in Sources */,
+				FA026D071CBCAA3100D83D34 /* STUB_MSShapePath.m in Sources */,
 				FA4B275D1C613B9E00C82A0C /* SKK_MSStyle.m in Sources */,
 				FA4B272C1C600C6600C82A0C /* STUB_MSShapeGroup.m in Sources */,
 				FABFF04C1C5FFC6B00CC6112 /* STUB_MSImmutableShapeGroup.m in Sources */,
@@ -714,8 +767,11 @@
 				FA4B273E1C61393400C82A0C /* STUB_MSStyle.m in Sources */,
 				FABFF0511C5FFE4F00CC6112 /* STUB_MSPage.m in Sources */,
 				FA4B274F1C613AF900C82A0C /* STUBObject.m in Sources */,
+				FA026D0B1CBCAB0200D83D34 /* STUB_MSCurvePoint.m in Sources */,
+				FA026D131CBCAF3400D83D34 /* STUB_MSShapePathLayer.m in Sources */,
 				FA4B27241C6005AE00C82A0C /* SKK_MSLayer.m in Sources */,
 				FA4B279A1C63F04A00C82A0C /* STUB_MSModelBase.m in Sources */,
+				FA026D0F1CBCAF0900D83D34 /* SKK_MSShapePathLayer.m in Sources */,
 				FA4B27951C63ECCF00C82A0C /* SKK_MSDocumentFile.m in Sources */,
 				FA4B277D1C615FF100C82A0C /* SKK_MSStyleBasicFill.m in Sources */,
 				FA4B27771C614A9000C82A0C /* SKK_MSStylePart.m in Sources */,
@@ -762,7 +818,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -808,7 +864,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

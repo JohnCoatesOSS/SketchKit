@@ -20,7 +20,12 @@
 @property (readonly) STUB_MSStyle *style;
 
 
+// OLD Version of invalidateCachedImmutableModelObjects
+// version < 3.5
 - (void)invalidateLightweightCopy:(id)arg1;
+// version >= 3.5
+- (void)invalidateCachedImmutableModelObjects;
+
 // groups only
 // version < 3.5
 - (BOOL)resizeRoot:(BOOL)resize;

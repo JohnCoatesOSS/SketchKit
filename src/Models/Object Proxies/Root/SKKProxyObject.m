@@ -14,14 +14,19 @@
 
 @implementation SKKProxyObject
 
-- (instancetype)init {
+- (instancetype)initWithTarget:(STUBObject *)targetObject {
     self = [super init];
 
     if (self) {
-
+        _targetObject = targetObject;
     }
     
     return self;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@ encapsulating %@>",
+            NSStringFromClass([self class]), self.targetObject];
 }
 
 - (BOOL)selectorCheck:(NSObject *)instance selector:(SEL)selector {

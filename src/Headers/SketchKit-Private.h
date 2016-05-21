@@ -25,6 +25,9 @@
 #import "STUB_MSDocumentFile.h"
 #import "STUB_MSDocumentData.h"
 #import "STUB_MSTextLayer.h"
+#import "STUB_MSShapePath.h"
+#import "STUB_MSShapePathLayer.h"
+#import "STUB_MSCurvePoint.h"
 
 // Object Proxies
 #import "SKKProxyObject-Private.h"
@@ -41,3 +44,5 @@
 #import "SKK_MSDocumentFile-Private.h"
 #import "SKK_MSDocumentData-Private.h"
 #import "SKK_MSTextLayer-Private.h"
+#import "SKK_MSShapePath.h"
+#import "SKK_MSShapePathLayer.h"

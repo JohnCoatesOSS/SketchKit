@@ -15,6 +15,10 @@
 @property(nonatomic) unsigned long long textAlignment;
 @property(readonly, nonatomic) double defaultLineHeight;
 @property(nonatomic) double lineSpacing;
+
+// Sketch 3.8
+//@property(nonatomic) NSNumber *characterSpacing;
+// Sketch 3.6
 @property(nonatomic) double characterSpacing;
 
 @end

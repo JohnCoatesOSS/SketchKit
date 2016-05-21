@@ -69,11 +69,25 @@
 }
 
 - (void)setCharacterSpacing:(double)characterSpacing {
-    if (![self selectorCheck:self.textLayer selector:@selector(setCharacterSpacing:)]) {
+    SEL selector = @selector(setCharacterSpacing:);
+    if (![self selectorCheck:self.textLayer selector:selector]) {
         return;
     }
     
-    [self.textLayer setCharacterSpacing:characterSpacing];
+    NSMethodSignature *methodSignature = [self.textLayer methodSignatureForSelector:selector];
+    const char *argumentOneCString = [methodSignature getArgumentTypeAtIndex:2];
+    
+    // Sketch 3.8 switches this to NSNumber
+    if (argumentOneCString[0] == '@') {
+        NSNumber *characterSpacingObject = @(characterSpacing);
+        
+        IMP implementation = [self.textLayer methodForSelector:selector];
+        void (*setCharacterSpacing)(id, SEL, NSNumber *) = (void *)implementation;
+        setCharacterSpacing(self.textLayer, selector, characterSpacingObject);
+    }
+    else {
+        [self.textLayer setCharacterSpacing:characterSpacing];
+    }
 }
 
 

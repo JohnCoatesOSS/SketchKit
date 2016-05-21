@@ -32,7 +32,7 @@
 }
 
 - (instancetype)initWithLayer:(STUB_MSLayer *)layer {
-    self = [super init];
+    self = [super initWithTarget:layer];
 
     if (self) {
         _layer = layer;
